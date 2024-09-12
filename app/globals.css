@@ -5,4 +5,5 @@
 .gif {
   background-image: url("/homepagegif.gif");
   background-size: cover;
+  background-position: top;
 }
