@@ -24,11 +24,11 @@ export default function Home() {
       <section id="about" className="py-16 px-4 bg-blue-600 text-center">
         <h2 className="text-4xl font-bold mb-6">About Us</h2>
         <p className="max-w-3xl mx-auto text-lg leading-relaxed">
-          <p>This website is dedicated to providing valuable resources and insights to students and enthusiasts of Ocean Engineering and Naval Architecture, helping them navigate through this exciting and complex discipline. Whether you're exploring hydrostatics calculations, understanding ship geometry, or seeking the latest in industry trends and publications, OceanicEdge offers a wealth of knowledge at your fingertips.</p><br />
+          This website is dedicated to providing valuable resources and insights to students and enthusiasts of Ocean Engineering and Naval Architecture, helping them navigate through this exciting and complex discipline. Whether you're exploring hydrostatics calculations, understanding ship geometry, or seeking the latest in industry trends and publications, OceanicEdge offers a wealth of knowledge at your fingertips.<br/><br/>
 
-          <p>Ocean Engineering and Naval Architecture is a dynamic field, integral to the design, construction, and maintenance of ships, submarines, offshore platforms, and other marine structures. It combines elements of civil, mechanical, and electrical engineering, ensuring the safe and efficient movement of vessels and the sustainable exploration of marine resources. With the growing significance of maritime activities in global trade, energy production, and environmental sustainability, the importance of this discipline continues to rise.</p><br />
+          Ocean Engineering and Naval Architecture is a dynamic field, integral to the design, construction, and maintenance of ships, submarines, offshore platforms, and other marine structures. It combines elements of civil, mechanical, and electrical engineering, ensuring the safe and efficient movement of vessels and the sustainable exploration of marine resources. With the growing significance of maritime activities in global trade, energy production, and environmental sustainability, the importance of this discipline continues to rise.<br/><br/>
 
-          <p>Join us as we dive deep into the ocean of knowledge and navigate the fascinating world of Ocean Engineering and Naval Architecture.</p>
+          Join us as we dive deep into the ocean of knowledge and navigate the fascinating world of Ocean Engineering and Naval Architecture!
         </p>
       </section>
 
