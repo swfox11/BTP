@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
       <footer className='bg-black text-white flex justify-center items-center h-16 px-8 py-8 mt-auto'>
-        <span className='text-center font-semibold'>Copyright &copy; {currentYear} <span>Oceanic</span><span className="text-[#48bf91]">Edge</span> - All rights reserved</span>
+        <div className='font-semibold'>Copyright &copy; {currentYear} <span className='font-bold font-serif'><span>Oceanic</span><span className="text-[#48bf91]">Edge</span></span> - All rights reserved</div>
       </footer>
     )
 }
