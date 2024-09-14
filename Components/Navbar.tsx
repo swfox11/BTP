@@ -22,8 +22,10 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-8 font-bold text-lg items-center justify-center">
-          <Link className={pathname === '/' ? 'active' : ''} href="/">Home</Link>
-          <Link className={pathname === '/about' ? 'active' : ''} href="/about">About</Link>
+          {/* <Link className={pathname === '/' ? 'active' : ''} href="/">Home</Link> */}
+          <Link className="hover:text-[#48bf91]" href="/">Home</Link>
+          {/* <Link className={pathname === '/about' ? 'active' : ''} href="/about">About</Link> */}
+          <Link className="hover:text-[#48bf91]" href="#about">About</Link>
         </div>
 
       </div>
@@ -50,7 +52,7 @@ const Navbar = () => {
                 <Link href="#" className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Lab Facilities</Link>
               </li>
               <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Gallery</Link>
+                <Link href="#" className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Visual Gallery</Link>
               </li>
             </ul>
           </div>
