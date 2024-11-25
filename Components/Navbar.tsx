@@ -43,10 +43,10 @@ const Navbar = () => {
           <div id="dropdown" className={`${showdropdown ? "" : "hidden"} absolute right-[213px] top-[60px] bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700`}>
             <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
               <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Faculty</Link>
+                <Link href="/faculty" className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Faculty</Link>
               </li>
               <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Location</Link>
+                <Link href="/location" className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Location</Link>
               </li>
               <li>
                 <Link href="#" className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Lab Facilities</Link>
