@@ -66,13 +66,13 @@ const EventsPage = () => {
         </div>
 
         {/* Content */}
-        <p className="text-gray-700 leading-8 font-semibold">
+        <p className="text-gray-700 leading-8 font-semibold text-lg">
           The International Conference on Ship and Offshore Technology (ICSOT) is a premier event
           initiated by the Royal Institution of Naval Architects (RINA). It serves as a platform
           to advance research and explore practical applications in shipbuilding, offshore
           technology, and marine engineering.
         </p>
-        <p className="text-gray-700 leading-8 font-semibold mt-4">
+        <p className="text-gray-700 leading-8 font-semibold text-lg mt-4">
           Hosted multiple times by IIT Kharagpur’s Department of Ocean Engineering and Naval
           Architecture, ICSOT fosters collaboration between academia and industry. The department
           hosted its first ICSOT in 2009, with the latest edition in 2023 showcasing cutting-edge
@@ -137,13 +137,13 @@ const EventsPage = () => {
         </div>
 
         {/* Content */}
-        <p className="text-gray-700 leading-8 font-semibold">
+        <p className="text-gray-700 leading-8 font-semibold text-lg">
           Samudramanthan is an annual technical festival organized by the Department of Ocean
           Engineering and Naval Architecture at IIT Kharagpur. It offers a platform for students
           across India to showcase ideas and gain practical exposure in marine sciences and naval
           architecture.
         </p>
-        <p className="text-gray-700 leading-8 font-semibold mt-4">
+        <p className="text-gray-700 leading-8 font-semibold text-lg mt-4">
           From technical competitions to industry interactions, the festival bridges the gap
           between academia and the industry. Workshops, seminars, and networking opportunities
           enhance skills while keeping participants updated with the latest trends in the field.
