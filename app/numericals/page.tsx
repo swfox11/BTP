@@ -20,6 +20,9 @@ const numericals = [
   { title: 'Admiralty Coefficient', path: '/numericals/admirality' },
   { title: 'WaterplaneArea Coefficient', path: '/numericals/wp' },
   { title: 'Vertical Prismatic Coefficient', path: '/numericals/vp' },
+  { title: 'Transverse Metacentric Radius (BM) for Rectangular Barge', path: '/numericals/transverse_meta' },
+  { title: 'Longitudinal Metacentric Radius (BML) for Rectangular Barge', path: '/numericals/longitudinal_meta' },
+  {title: 'Initial Stability Calculation for Rectangular Barge', path: '/numericals/stability' },
 ];
 
 const NumericalsPage = () => {
