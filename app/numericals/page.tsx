@@ -14,10 +14,12 @@
 import Link from 'next/link';
 
 const numericals = [
-  { title: 'Calculate Block Coeffecient(Cb)', path: '/numericals/add' },
-  { title: 'Subtraction', path: '/numericals/subtract'},
-  { title: 'Multiplication', path: '/numericals/multiply' },
-  { title: 'Division', path: '/numericals/divide' },
+  { title: 'Block Coeffecient(Cb)', path: '/numericals/cb' },
+  { title: 'Midship Coeffecient(Cm)', path: '/numericals/cm'},
+  { title: 'Prismatic Coeffecient(Cp)', path: '/numericals/cp' },
+  { title: 'Admiralty Coefficient', path: '/numericals/admirality' },
+  { title: 'WaterplaneArea Coefficient', path: '/numericals/wp' },
+  { title: 'Vertical Prismatic Coefficient', path: '/numericals/vp' },
 ];
 
 const NumericalsPage = () => {
