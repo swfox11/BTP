@@ -53,9 +53,9 @@ const numericals = [
   { title: 'Admiralty Coefficient', path: '/numericals/admiralty' },
   { title: 'Waterplane Area Coefficient', path: '/numericals/wp' },
   { title: 'Vertical Prismatic Coefficient', path: '/numericals/vp' },
-  { title: 'Transverse Metacentric Radius (BM)', path: '/numericals/transverse_meta' },
-  { title: 'Longitudinal Metacentric Radius (BML)', path: '/numericals/longitudinal_meta' },
-  { title: 'Initial Stability Calculation', path: '/numericals/stability' }
+  { title: 'Transverse Metacentric Radius (BM) for Rectangular Barge', path: '/numericals/transverse_meta' },
+  { title: 'Longitudinal Metacentric Radius (BML) for Rectangular Barge', path: '/numericals/longitudinal_meta' },
+  { title: 'Initial Stability Calculation (GM) for Rectangular Barge', path: '/numericals/stability' }
 ];
 
 const NumericalsPage = () => {
