@@ -41,7 +41,7 @@ export default function Home() {
       <section id="about" className="py-16 px-4 bg-[#4a809b] text-center">
         <h2 className="text-4xl font-bold mb-6">About Us</h2>
         <p className="max-w-3xl mx-auto text-lg leading-relaxed">
-          This website is dedicated to providing valuable resources and insights to students and enthusiasts of Ocean Engineering and Naval Architecture, helping them navigate through this exciting and complex discipline. Whether you're exploring hydrostatics calculations, understanding ship geometry, or seeking the latest in industry trends and publications, OceanicEdge offers a wealth of knowledge at your fingertips.<br /><br />
+          This website is dedicated to providing valuable resources and insights to students and enthusiasts of Ocean Engineering and Naval Architecture, helping them navigate through this exciting and complex discipline. Whether you are exploring hydrostatics calculations, understanding ship geometry, or seeking the latest in industry trends and publications, OceanicEdge offers a wealth of knowledge at your fingertips.<br /><br />
           Ocean Engineering and Naval Architecture is a dynamic field, integral to the design, construction, and maintenance of ships, submarines, offshore platforms, and other marine structures. It combines elements of civil, mechanical, and electrical engineering, ensuring the safe and efficient movement of vessels and the sustainable exploration of marine resources. With the growing significance of maritime activities in global trade, energy production, and environmental sustainability, the importance of this discipline continues to rise.<br /><br />
           Join us as we delve into a sea of knowledge and explore the captivating realm of maritime sciences and technology!
         </p>
@@ -75,7 +75,7 @@ export default function Home() {
             <div className="p-6 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Global Fleet 2024</h3>
               <p className="leading-relaxed">
-                Explore the most up-to-date information on global fleets and ship types sailing across the world's oceans.
+                Explore the most up-to-date information on global fleets and ship types sailing across the world&apos;s oceans.
               </p>
             </div>
 
@@ -99,7 +99,7 @@ export default function Home() {
             <div className="p-6 bg-gradient-to-r from-indigo-400 to-indigo-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Events</h3>
               <p className="leading-relaxed">
-                Discover the department's flagship events, including ICSOT-India and Samudramanthan, fostering learning and collaboration.
+                Discover the department&apos;s flagship events, including ICSOT-India and Samudramanthan, fostering learning and collaboration.
               </p>
             </div>
           </div>

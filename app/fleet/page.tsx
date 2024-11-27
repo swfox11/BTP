@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 // import Image from 'next/image';
 // import { useState } from 'react';
@@ -141,7 +141,7 @@ const GlobalFleet2024 = () => {
         Global Fleet 2024
       </h1>
       <p className="text-center text-lg text-gray-700 font-semibold max-w-4xl mx-auto mb-12">
-        Discover a visual collection of the global fleet of 2024, showcasing the diverse range of vessels navigating the world's oceans. From merchant ships to naval vessels, these images highlight the scale and complexity of maritime operations today.
+        Discover a visual collection of the global fleet of 2024, showcasing the diverse range of vessels navigating the world&apos;s oceans. From merchant ships to naval vessels, these images highlight the scale and complexity of maritime operations today.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-12">
         {images.map((image, index) => (
