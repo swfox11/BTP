@@ -22,10 +22,25 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-8 font-bold text-lg items-center justify-center">
+          
           {/* <Link className={pathname === '/' ? 'active' : ''} href="/">Home</Link> */}
           <Link className="hover:text-[#48bf91]" href="/">Home</Link>
           {/* <Link className={pathname === '/about' ? 'active' : ''} href="/about">About</Link> */}
-          <Link className="hover:text-[#48bf91]" href="#about">About</Link>
+          {/* <Link className="hover:text-[#48bf91]" href="#about">About</Link> */}
+          <Link
+            href="#about"
+            className="hover:text-[#48bf91]"
+            onClick={(e) => {
+              e.preventDefault(); // Prevent default anchor behavior
+              const aboutSection = document.querySelector("#about");
+              if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            About
+          </Link>
+
         </div>
 
       </div>
@@ -33,9 +48,9 @@ const Navbar = () => {
 
       <div className="flex gap-3 items-center justify-center">
 
-      {/* onBlur={() => { setTimeout(() => { setshowdropdown(false) }, 100) }} */}
+        {/* onBlur={() => { setTimeout(() => { setshowdropdown(false) }, 100) }} */}
         <div>
-          <button onClick={() => { setshowdropdown(!showdropdown) }}   id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Department (IIT KGP)<svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button onClick={() => { setshowdropdown(!showdropdown) }} id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Department (IIT KGP)<svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
           </svg>
           </button>
@@ -47,9 +62,9 @@ const Navbar = () => {
                 <Link href="/faculty" onClick={() => { setshowdropdown(!showdropdown) }} className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white"  >Faculty</Link>
               </li>
 
-              
-                {/* <Link href="/faculty" className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Faculty</Link> */}
-              
+
+              {/* <Link href="/faculty" className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Faculty</Link> */}
+
 
               <li>
                 <Link href="/location" onClick={() => { setshowdropdown(!showdropdown) }} className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Location</Link>
@@ -66,7 +81,7 @@ const Navbar = () => {
 
         {/* onBlur={() => { setTimeout(() => { setshowdropdown2(false) }, 100) }} */}
         <div>
-          <button onClick={() => { setshowdropdown2(!showdropdown2) }}   id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Student Resources<svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button onClick={() => { setshowdropdown2(!showdropdown2) }} id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Student Resources<svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
           </svg>
           </button>
