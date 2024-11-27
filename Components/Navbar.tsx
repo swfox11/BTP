@@ -90,7 +90,7 @@ const Navbar = () => {
           <div id="dropdown" className={`${showdropdown2 ? "" : "hidden"} absolute right-[14px] top-[60px] bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700`}>
             <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
               <li>
-                <Link href="/terminology" onClick={() => { setshowdropdown2(!showdropdown2) }} className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Terminologies</Link>
+                <Link href="/terminologies" onClick={() => { setshowdropdown2(!showdropdown2) }} className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Terminologies</Link>
               </li>
               <li>
                 <Link href="/numericals" onClick={() => { setshowdropdown2(!showdropdown2) }} className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Basic Calculations</Link>
