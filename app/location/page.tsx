@@ -3,7 +3,7 @@ import React from "react";
 const LocationPage = () => {
   
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center pt-10 pb-10 bg-lightBlue">
+    <div className="min-h-screen bg-gray-200 flex flex-col items-center justify-center pt-10 pb-10 bg-lightBlue">
       <h1 className="text-4xl font-bold text-blue-800 mb-6 transition-transform transform hover:scale-105">
         Visit Us
       </h1>

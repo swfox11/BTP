@@ -36,7 +36,7 @@ const photosSamudramanthan = [
 
 const EventsPage = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-200">
       <h1 className="text-4xl font-bold text-blue-800 text-center my-10">Department Events</h1>
 
       {/* ICSOT Section */}
