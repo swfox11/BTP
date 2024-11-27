@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 const StabilityCheckPage = () => {
-  const [depth, setDepth] = useState<string>(''); // d
+//   const [depth, setDepth] = useState<string>(''); // d
   const [breadth, setBreadth] = useState<string>(''); // B
   const [draught, setDraught] = useState<string>(''); // T
   const [kg, setKg] = useState<string>(''); // KG
@@ -13,13 +13,13 @@ const StabilityCheckPage = () => {
   const [stability, setStability] = useState<string | null>(null); // Stability Status
 
   const calculateStability = () => {
-    const d = parseFloat(depth);
+    // const d = parseFloat(depth);
     const B = parseFloat(breadth);
     const T = parseFloat(draught);
     const KG = parseFloat(kg);
 
-    if (!isNaN(d) && !isNaN(B) && !isNaN(T) && !isNaN(KG) && d > 0 && B > 0 && T > 0 && KG >= 0) {
-      const KM = d / 2 + (B ** 2) / (12 * T); // Calculate KM
+    if (!isNaN(B) && !isNaN(T) && !isNaN(KG) && B > 0 && T > 0 && KG >= 0) {
+      const KM = T / 2 + (B ** 2) / (12 * T); // Calculate KM
       const GM = KM - KG; // Calculate GM
       setKm(KM);
       setGm(GM);
@@ -39,7 +39,7 @@ const StabilityCheckPage = () => {
         }}
         className="space-y-4"
       >
-        <div>
+        {/* <div>
           <label htmlFor="depth" className="block font-semibold">
             Depth ( d ) (m):
           </label>
@@ -51,7 +51,7 @@ const StabilityCheckPage = () => {
             className="w-full p-2 border rounded"
             placeholder="Enter depth in meters"
           />
-        </div>
+        </div> */}
         <div>
           <label htmlFor="breadth" className="block font-semibold">
             Breadth ( B ) (m):
