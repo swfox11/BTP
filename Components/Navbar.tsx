@@ -2,14 +2,14 @@
 import Link from 'next/link'
 import React from 'react'
 import { useState } from 'react'
-import { usePathname } from 'next/navigation';
+// import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
 
   const [showdropdown, setshowdropdown] = useState(false)
   const [showdropdown2, setshowdropdown2] = useState(false)
 
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
   return (
     <nav className='bg-black text-white flex flex-col justify-between items-center md:h-16 md:flex-row px-3'>
