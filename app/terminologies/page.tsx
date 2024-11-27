@@ -16,10 +16,9 @@ const terminologies = [
   { term: "Stability", link: "https://en.wikipedia.org/wiki/Ship_stability" },
   { term: "Bow", link: "https://en.wikipedia.org/wiki/Bow_(ship)" },
   { term: "Stern", link: "https://en.wikipedia.org/wiki/Stern" },
-  { term: "Different Types of Plans", link: "https://en.wikipedia.org/wiki/Ship_design_and_construction" },
   { term: "Block Coefficient", link: "https://en.wikipedia.org/wiki/Block_coefficient" },
   { term: "Midship Coefficient", link: "https://en.wikipedia.org/wiki/Ship_measurements" },
-  { term: "Prismatic Coefficient", link: "https://en.wikipedia.org/wiki/Ship_measurements" },
+  { term: "Prismatic Coefficient", link: "https://www.sciencedirect.com/topics/engineering/prismatic-coefficient" },
   { term: "Waterplane Area Coefficient", link: "https://en.wikipedia.org/wiki/Ship_measurements" },
   { term: "Admiralty Coefficient", link: "https://en.wikipedia.org/wiki/Admiralty_coefficients" },
   { term: "Metacenter", link: "https://en.wikipedia.org/wiki/Metacentric_height" },
@@ -37,7 +36,7 @@ const TerminologiesPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-100 via-gray-200 to-gray-300 py-16 px-6">
+    <div className="min-h-screen bg-gradient-to-b from-gray-200 via-gray-300 to-gray-400 py-16 px-6">
       <h1 className="text-4xl font-bold text-center text-blue-800 mb-12">
         Key Terminologies
       </h1>
