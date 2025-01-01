@@ -10,7 +10,7 @@ const config: Config = {
   //   './app/**/*.{js,ts,jsx,tsx}', // If using the Next.js App directory
   //   './layouts/**/*.{js,ts,jsx,tsx}', // If using custom layouts
   //   './public/**/*.html', // For static HTML files
-    
+
   // ],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -19,6 +19,14 @@ const config: Config = {
     "./layouts/**/*.{js,ts,jsx,tsx}",
     "./public/**/*.html", // For static HTML files
   ],
+  safelist: [
+    'hidden',
+    'block',
+    'hover:bg-[#48bf91]',
+    'bg-black',
+    'text-white',
+  ],
+
   theme: {
     extend: {
       colors: {
@@ -28,7 +36,9 @@ const config: Config = {
     },
   },
   plugins: [
-   
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 };
 export default config;
