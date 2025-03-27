@@ -56,7 +56,7 @@ const Navbar = () => {
           </button>
 
           {/* Dropdown menu  */}
-          <div id="dropdown" className={`${showdropdown ? "" : "hidden"} absolute right-[213px] top-[60px] bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700`}>
+          <div id="dropdown" className={`${showdropdown ? "" : "hidden"} absolute right-[213px] top-[60px] bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}>
             <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
               <li>
                 <Link href="/faculty" onClick={() => { setshowdropdown(!showdropdown) }} className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white"  >Faculty</Link>
@@ -75,6 +75,9 @@ const Navbar = () => {
               <li>
                 <Link href="/events" onClick={() => { setshowdropdown(!showdropdown) }} className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Events</Link>
               </li>
+              <li>
+                <Link href="/visualgallery" onClick={() => { setshowdropdown(!showdropdown) }} className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Visual Gallery</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -87,7 +90,7 @@ const Navbar = () => {
           </button>
 
           {/* Dropdown menu  */}
-          <div id="dropdown" className={`${showdropdown2 ? "" : "hidden"} absolute right-[14px] top-[60px] bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700`}>
+          <div id="dropdown" className={`${showdropdown2 ? "" : "hidden"} absolute right-[14px] top-[60px] bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}>
             <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
               <li>
                 <Link href="/terminologies" onClick={() => { setshowdropdown2(!showdropdown2) }} className="block px-4 py-2 hover:bg-[#48bf91] dark:hover:bg-gray-600 dark:hover:text-white">Terminologies</Link>

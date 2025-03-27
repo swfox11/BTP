@@ -11,3 +11,7 @@
 .active {
   color: #48bf91
 }
+
+.slick-prev, .slick-next {
+  color: #48bf91 !important; /* Match the theme */
+}

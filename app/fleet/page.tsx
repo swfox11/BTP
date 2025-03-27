@@ -122,16 +122,16 @@
 import React from "react";
 
 const images = [
-  "/images/average_age.png",
-  "/images/average_age2.png",
-  "/images/container_shipping_cycle.png",
-  "/images/deliveries.png",
-  "/images/Development_table.png",
-  "/images/global_ship_capacity.png",
-  "/images/shares.png",
-  "/images/ship_tonnage.png",
-  "/images/trends_in_sailing.png",
-  "/images/trends_in_yearly.png",
+  "/fleet/average_age.png",
+  "/fleet/average_age2.png",
+  "/fleet/container_shipping_cycle.png",
+  "/fleet/deliveries.png",
+  "/fleet/Development_table.png",
+  "/fleet/global_ship_capacity.png",
+  "/fleet/shares.png",
+  "/fleet/ship_tonnage.png",
+  "/fleet/trends_in_sailing.png",
+  "/fleet/trends_in_yearly.png",
 ];
 
 const GlobalFleet2024 = () => {
