@@ -12,7 +12,7 @@ const Navbar = () => {
   // const pathname = usePathname();
 
   return (
-    <nav className='bg-black text-white flex flex-col justify-between items-center md:h-16 md:flex-row px-3'>
+    <nav className='bg-gray-900 text-white flex flex-col justify-between items-center md:h-16 md:flex-row px-3 shadow-2xl z-10'>
 
       <div className='flex gap-16 justify-center items-center'>
 

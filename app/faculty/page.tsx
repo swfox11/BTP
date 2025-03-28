@@ -449,7 +449,7 @@ const facultyData: Faculty[] = [
 ];
 
 const FacultyCard: FC<{ faculty: Faculty }> = ({ faculty }) => (
-    <div className="max-w-sm w-full mx-auto my-6 p-6 border border-gray-200 rounded-lg shadow-lg bg-white hover:shadow-2xl transition-shadow duration-500 transform hover:-translate-y-2 hover:scale-105">
+    <div className="max-w-sm w-full mx-auto my-6 p-6 border border-gray-200 rounded-lg shadow-lg bg-gray-200 hover:shadow-2xl transition-shadow duration-500 transform hover:-translate-y-2 hover:scale-105">
         <img
             src={faculty.profilePicture || "/placeholder.png"}
             alt={`${faculty.name}'s profile`}
@@ -512,7 +512,8 @@ const FacultyCard: FC<{ faculty: Faculty }> = ({ faculty }) => (
 );
 
 const FacultyPage: FC = () => (
-    <div className="min-h-screen bg-gradient-to-br from-green-100 via-blue-50 to-blue-200 py-12">
+    //<div className="min-h-screen bg-gradient-to-br from-green-100 via-blue-50 to-blue-200 py-12">
+    <div className="min-h-screen bg-gray-300 py-12">
         <h1 className="text-4xl font-extrabold text-center text-blue-800 mb-10 drop-shadow-lg">
             Meet Our Faculty
         </h1>
