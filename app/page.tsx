@@ -14,7 +14,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full text-white ">
+    <div className="w-full text-white bg-black ">
       {/* Hero Section */}
       <section className="gif flex flex-col items-center justify-center text-center pt-24 pb-72 px-4">
         <h1 className="text-5xl font-bold tracking-wider mb-6 animate-fade-in">
@@ -122,6 +122,9 @@ export default function Home() {
     </div>
   );
 }
+
+
+
 
 
 
