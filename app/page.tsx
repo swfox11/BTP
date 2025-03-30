@@ -33,13 +33,6 @@ export default function Home() {
           backgroundPosition: "top",
         }}
       >
-        {/* ✅ Placeholder while GIF loads */}
-
-        {!gifLoaded && (
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-900 animate-pulse">
-            <div className="loader"> </div>
-          </div>
-        )}
 
         <h1 className="  text-3xl md:text-5xl font-bold tracking-wider mb-6 animate-fade-in">
           <span className="text-[#C19A6B]">Welcome to </span>
@@ -59,7 +52,18 @@ export default function Home() {
         >
           Explore Features
         </button>
+
+        {/* ✅ Placeholder while GIF loads */}
+
+        {!gifLoaded && (
+          <div className="flex items-center justify-center bg-gray-900 animate-pulse  ">
+            
+            <div className="loader mt-4"> </div>
+          </div>
+        )}
+
       </section>
+
 
       <div className="w-full h-2 bg-[#2a526c]"></div>
 
