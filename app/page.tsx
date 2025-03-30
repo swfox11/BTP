@@ -24,7 +24,7 @@ export default function Home() {
             <span className="text-[#48bf91]">Edge</span>
           </span>
         </h1>
-        <p className=" text-0.5xl md:text-xl max-w-2xl leading-relaxed mb-10">
+        <p className="text-0.5xl md:text-xl max-w-2xl leading-relaxed mb-10">
           A comprehensive platform built by students of the Department of Ocean Engineering & Naval Architecture at IIT Kharagpur to assist with academic tools, global insights, and much more.
         </p>
         <button
