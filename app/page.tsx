@@ -17,19 +17,19 @@ export default function Home() {
     <div className="w-full text-white bg-black ">
       {/* Hero Section */}
       <section className="gif flex flex-col items-center justify-center text-center pt-24 pb-72 px-4">
-        <h1 className="text-5xl font-bold tracking-wider mb-6 animate-fade-in">
+        <h1 className="  text-3xl md:text-5xl font-bold tracking-wider mb-6 animate-fade-in">
           <span className="text-[#C19A6B]">Welcome to </span>
           <span className="font-bold font-serif">
             <span>Oceanic</span>
             <span className="text-[#48bf91]">Edge</span>
           </span>
         </h1>
-        <p className="text-xl max-w-2xl leading-relaxed mb-10">
+        <p className=" text-0.5xl md:text-xl max-w-2xl leading-relaxed mb-10">
           A comprehensive platform built by students of the Department of Ocean Engineering & Naval Architecture at IIT Kharagpur to assist with academic tools, global insights, and much more.
         </p>
         <button
           onClick={() => handleScroll("features")}
-          className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 px-6 py-3 rounded-md shadow-lg font-semibold transition-all duration-300 transform hover:scale-105"
+          className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 px-4 py-2 md:px-6 md:py-3 rounded-md shadow-lg font-semibold transition-all duration-300 transform hover:scale-105"
         >
           Explore Features
         </button>

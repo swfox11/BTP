@@ -128,11 +128,11 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // **Added state for mobile menu toggle**
 
   return (
-    <nav className="bg-gray-900 text-white flex flex-col md:flex-row justify-between items-center md:h-16 px-3 shadow-2xl z-10">
+    <nav className="bg-gray-900 text-white flex flex-col md:flex-row justify-between items-center md:h-16 p-2 shadow-2xl z-10">
 
       <div className="w-full flex justify-between items-center">
         {/* Logo */}
-        <div className="flex gap-1 text-2xl items-center">
+        <div className="flex gap-1 text-xl md:text-2xl items-center">
           <img src="/favicon.gif" alt="logo" width={35} />
           <span className="font-bold font-serif">
             <span>Oceanic</span><span className="text-[#48bf91]">Edge</span>
@@ -140,11 +140,11 @@ const Navbar = () => {
         </div>
 
         {/* **Hamburger Menu for Mobile** */}
-        <button className="md:hidden text-white text-3xl" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
+        <button className="md:hidden text-white text-2xl" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
       </div>
 
       {/* **Menu Items - Mobile and Desktop** */}
-      <div className={`w-full md:flex md:items-center md:justify-center md:gap-8 font-bold text-lg ${menuOpen ? "flex flex-col items-center gap-4 mt-4" : "hidden md:flex"}`}>
+      <div className={`w-full md:flex-row md:items-center md:justify-center md:gap-8 font-bold text-lg ${menuOpen ? "flex flex-col items-center gap-4 mt-4" : "hidden md:flex"}`}>
         <Link className="hover:text-[#48bf91]" href="/">Home</Link>
         <Link href="#about" className="hover:text-[#48bf91]" onClick={(e) => {
           e.preventDefault();
@@ -153,7 +153,7 @@ const Navbar = () => {
       </div>
 
       {/* **Dropdown Buttons - Positioned Properly** */}
-      <div className={`flex flex-col md:flex-row gap-3 items-center justify-center ${menuOpen ? "mt-4" : ""}`}>
+      <div className={`flex flex-row gap-3 items-center justify-center ${menuOpen ? "mt-4" : "hidden md:flex"}`}>
       
 
         {/* **Dropdown 1 - Department** */}
