@@ -1,7 +1,14 @@
-"use client"
-import React from "react";
-
+"use client";
+import React, { useState, useEffect } from "react";
 export default function Home() {
+  const [gifLoaded, setGifLoaded] = useState(false); // ✅ Track GIF load status
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = "/homepagegif.gif"; // ✅ Preload GIF
+    img.onload = () => setGifLoaded(true); // ✅ Set state when loaded
+  }, []);
+
   const handleScroll = (id: string) => {
     if (id === "top") {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -16,7 +23,24 @@ export default function Home() {
   return (
     <div className="w-full text-white bg-black ">
       {/* Hero Section */}
-      <section className="gif flex flex-col items-center justify-center text-center pt-24 pb-72 px-4">
+
+      {/* <section className="gif flex flex-col items-center justify-center text-center pt-24 pb-72 px-4"> GIF */}
+      <section
+        className={`flex flex-col items-center justify-center text-center pt-24 pb-72 px-4 transition-opacity duration-500 opacity-100`}
+        style={{
+          backgroundImage: gifLoaded ? 'url("/homepagegif.gif")' : "none",
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+        }}
+      >
+        {/* ✅ Placeholder while GIF loads */}
+
+        {!gifLoaded && (
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-900 animate-pulse">
+            <div className="loader"> </div>
+          </div>
+        )}
+
         <h1 className="  text-3xl md:text-5xl font-bold tracking-wider mb-6 animate-fade-in">
           <span className="text-[#C19A6B]">Welcome to </span>
           <span className="font-bold font-serif">
@@ -25,7 +49,9 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-0.5xl md:text-xl max-w-2xl leading-relaxed mb-10">
-          A comprehensive platform built by students of the Department of Ocean Engineering & Naval Architecture at IIT Kharagpur to assist with academic tools, global insights, and much more.
+          A comprehensive platform built by students of the Department of Ocean
+          Engineering & Naval Architecture at IIT Kharagpur to assist with
+          academic tools, global insights, and much more.
         </p>
         <button
           onClick={() => handleScroll("features")}
@@ -41,9 +67,27 @@ export default function Home() {
       <section id="about" className="py-16 px-4 bg-[#4a809b] text-center">
         <h2 className="text-4xl font-bold mb-6">About Us</h2>
         <p className="max-w-3xl mx-auto text-lg leading-relaxed">
-          This website is dedicated to providing valuable resources and insights to students and enthusiasts of Ocean Engineering and Naval Architecture, helping them navigate through this exciting and complex discipline. Whether you are exploring hydrostatics calculations, understanding ship geometry, or seeking the latest in industry trends and publications, OceanicEdge offers a wealth of knowledge at your fingertips.<br /><br />
-          Ocean Engineering and Naval Architecture is a dynamic field, integral to the design, construction, and maintenance of ships, submarines, offshore platforms, and other marine structures. It combines elements of civil, mechanical, and electrical engineering, ensuring the safe and efficient movement of vessels and the sustainable exploration of marine resources. With the growing significance of maritime activities in global trade, energy production, and environmental sustainability, the importance of this discipline continues to rise.<br /><br />
-          Join us as we delve into a sea of knowledge and explore the captivating realm of maritime sciences and technology!
+          This website is dedicated to providing valuable resources and insights
+          to students and enthusiasts of Ocean Engineering and Naval
+          Architecture, helping them navigate through this exciting and complex
+          discipline. Whether you are exploring hydrostatics calculations,
+          understanding ship geometry, or seeking the latest in industry trends
+          and publications, OceanicEdge offers a wealth of knowledge at your
+          fingertips.
+          <br />
+          <br />
+          Ocean Engineering and Naval Architecture is a dynamic field, integral
+          to the design, construction, and maintenance of ships, submarines,
+          offshore platforms, and other marine structures. It combines elements
+          of civil, mechanical, and electrical engineering, ensuring the safe
+          and efficient movement of vessels and the sustainable exploration of
+          marine resources. With the growing significance of maritime activities
+          in global trade, energy production, and environmental sustainability,
+          the importance of this discipline continues to rise.
+          <br />
+          <br />
+          Join us as we delve into a sea of knowledge and explore the
+          captivating realm of maritime sciences and technology!
         </p>
       </section>
 
@@ -57,9 +101,12 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6 md:px-12 lg:px-24">
             {/* Feature 1 */}
             <div className="p-6 bg-gradient-to-r from-green-400 to-green-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
-              <h3 className="text-2xl font-semibold mb-4">Basic Calculations</h3>
+              <h3 className="text-2xl font-semibold mb-4">
+                Basic Calculations
+              </h3>
               <p className="leading-relaxed">
-                Access tools for Hydrostatics, Ship Geometry, and other fundamental calculations needed for your academic progress.
+                Access tools for Hydrostatics, Ship Geometry, and other
+                fundamental calculations needed for your academic progress.
               </p>
             </div>
 
@@ -67,7 +114,8 @@ export default function Home() {
             <div className="p-6 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Terminologies</h3>
               <p className="leading-relaxed">
-                Get familiar with essential naval architecture terminologies to help you excel in your coursework and beyond.
+                Get familiar with essential naval architecture terminologies to
+                help you excel in your coursework and beyond.
               </p>
             </div>
 
@@ -75,7 +123,8 @@ export default function Home() {
             <div className="p-6 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Global Fleet 2024</h3>
               <p className="leading-relaxed">
-                Explore the most up-to-date information on global fleets and ship types sailing across the world&apos;s oceans.
+                Explore the most up-to-date information on global fleets and
+                ship types sailing across the world&apos;s oceans.
               </p>
             </div>
 
@@ -83,7 +132,8 @@ export default function Home() {
             <div className="p-6 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Publications</h3>
               <p className="leading-relaxed">
-                Access research papers, patents, and publications related to Ocean Engineering & Naval Architecture.
+                Access research papers, patents, and publications related to
+                Ocean Engineering & Naval Architecture.
               </p>
             </div>
 
@@ -91,7 +141,8 @@ export default function Home() {
             <div className="p-6 bg-gradient-to-r from-pink-400 to-pink-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Lab Facilities</h3>
               <p className="leading-relaxed">
-                Explore cutting-edge labs equipped with advanced technology to support academic and research pursuits.
+                Explore cutting-edge labs equipped with advanced technology to
+                support academic and research pursuits.
               </p>
             </div>
 
@@ -99,7 +150,9 @@ export default function Home() {
             <div className="p-6 bg-gradient-to-r from-indigo-400 to-indigo-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Events</h3>
               <p className="leading-relaxed">
-                Discover the department&apos;s flagship events, including ICSOT-India and Samudramanthan, fostering learning and collaboration.
+                Discover the department&apos;s flagship events, including
+                ICSOT-India and Samudramanthan, fostering learning and
+                collaboration.
               </p>
             </div>
           </div>
@@ -110,7 +163,8 @@ export default function Home() {
       <section className="py-12 px-4 bg-[#2a526c] text-white text-center">
         <h2 className="text-3xl font-bold mb-6">Ready to Dive In?</h2>
         <p className="text-lg leading-relaxed max-w-xl mx-auto mb-8">
-          Discover the depths of maritime innovation and stay ahead with our specially curated resources and cutting-edge tools.
+          Discover the depths of maritime innovation and stay ahead with our
+          specially curated resources and cutting-edge tools.
         </p>
         <button
           onClick={() => handleScroll("top")}
@@ -122,11 +176,6 @@ export default function Home() {
     </div>
   );
 }
-
-
-
-
-
 
 // "use client"
 // import React from "react";
