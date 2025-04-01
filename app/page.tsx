@@ -46,18 +46,28 @@ export default function Home() {
           Engineering & Naval Architecture at IIT Kharagpur to assist with
           academic tools, global insights, and much more.
         </p>
-        <button
-          onClick={() => handleScroll("features")}
-          className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 px-4 py-2 md:px-6 md:py-3 rounded-md shadow-lg font-semibold transition-all duration-300 transform hover:scale-105"
-        >
-          Explore Features
-        </button>
+
+        <div className="flex gap-4">
+          <button
+            onClick={() => handleScroll("features")}
+            className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 px-4 py-2 md:px-6 md:py-3 rounded-md shadow-lg font-semibold transition-all duration-300 transform hover:scale-105"
+          >
+            Explore Features
+          </button>
+          <button
+            onClick={() => handleScroll("about")}
+            className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 px-4 py-2 md:px-6 md:py-3 rounded-md shadow-lg font-semibold transition-all duration-300 transform hover:scale-105"
+          >
+            About
+          </button>
+        </div>
+
 
         {/* ✅ Placeholder while GIF loads */}
 
         {!gifLoaded && (
           <div className="flex items-center justify-center bg-gray-900 animate-pulse  ">
-            
+
             <div className="loader mt-4"> </div>
           </div>
         )}

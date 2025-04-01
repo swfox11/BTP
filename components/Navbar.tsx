@@ -118,6 +118,90 @@
 
 
 
+// "use client"
+// import Link from 'next/link'
+// import React, { useState } from 'react'
+
+// const Navbar = () => {
+//   const [showDropdown, setShowDropdown] = useState(false);
+//   const [showDropdown2, setShowDropdown2] = useState(false);
+//   const [menuOpen, setMenuOpen] = useState(false); // **Added state for mobile menu toggle**
+
+//   return (
+//     <nav className="bg-gray-900 text-white flex flex-col md:flex-row justify-between items-center md:h-16 p-2 shadow-2xl z-10">
+
+//       <div className="w-full flex justify-between items-center">
+//         {/* Logo */}
+//         <div className="flex gap-1 text-xl md:text-2xl items-center">
+//           <img src="/favicon.gif" alt="logo" width={35} />
+//           <span className="font-bold font-serif">
+//             <span>Oceanic</span><span className="text-[#48bf91]">Edge</span>
+//           </span>
+//         </div>
+
+//         {/* **Hamburger Menu for Mobile** */}
+//         <button className="md:hidden text-white text-2xl" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
+//       </div>
+
+//       {/* **Menu Items - Mobile and Desktop** */}
+//       {/* <div className={`w-full md:flex-row md:items-center md:justify-center md:gap-8 font-bold text-lg ${menuOpen ? "flex flex-col items-center gap-4 mt-4" : "hidden md:flex"}`}>
+//         <Link className="hover:text-[#48bf91]" href="/">Home</Link>
+//         <Link href="#about" className="hover:text-[#48bf91]" onClick={(e) => {
+//           e.preventDefault();
+//           document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
+//         }}>About</Link>
+//       </div> */}
+
+//       {/* **Dropdown Buttons - Positioned Properly** */}
+//       <div className={`flex flex-row gap-1 items-center justify-center ${menuOpen ? "mt-4 px-2" : "hidden md:flex"}`}>
+      
+
+//         {/* **Dropdown 1 - Department** */}
+//         <div className="relative">
+//         <button 
+//             onClick={() => setShowDropdown(!showDropdown)} 
+//             className="w-[175px] text-white bg-blue-700 hover:bg-blue-800 font-small md:font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"> {}
+//             Department (IIT KGP)
+//             <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" /></svg>
+//           </button>
+
+//           <div className={`${showDropdown ? "block" : "hidden"} absolute left-0 md:left-auto bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}>
+//             <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">
+//               <li><Link href="/faculty" onClick={() => setShowDropdown(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Faculty</Link></li>
+//               <li><Link href="/location" onClick={() => setShowDropdown(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Location</Link></li>
+//               <li><Link href="/lab" onClick={() => setShowDropdown(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Lab Facilities</Link></li>
+//               <li><Link href="/events" onClick={() => setShowDropdown(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Events</Link></li>
+//               <li><Link href="/visualgallery" onClick={() => setShowDropdown(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Visual Gallery</Link></li>
+//             </ul>
+//           </div>
+//         </div>
+
+//         {/* **Dropdown 2 - Student Resources** */}
+//         <div className="relative">
+//           <button 
+//             onClick={() => setShowDropdown2(!showDropdown2)} 
+//             className="w-[175px] text-white bg-blue-700 hover:bg-blue-800 font small md:font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"> {/* **Increased width to 175px and used justify-between** */}
+//             Student Resources
+//             <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" /></svg>
+//           </button>
+
+//           <div className={`${showDropdown2 ? "block" : "hidden"} absolute left-0 md:left-auto bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}>
+//             <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">
+//               <li><Link href="/terminologies" onClick={() => setShowDropdown2(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Terminologies</Link></li>
+//               <li><Link href="/numericals" onClick={() => setShowDropdown2(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Basic Calculations</Link></li>
+//               <li><Link href="/fleet" onClick={() => setShowDropdown2(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Global Fleet 2024</Link></li>
+//               <li><Link href="/publication" onClick={() => setShowDropdown2(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Publications</Link></li>
+//             </ul>
+//           </div>
+//         </div>
+
+//       </div>
+//     </nav>
+//   );
+// }
+
+// export default Navbar;
+
 "use client"
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -125,72 +209,60 @@ import React, { useState } from 'react'
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showDropdown2, setShowDropdown2] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false); // **Added state for mobile menu toggle**
+  const [menuOpen, setMenuOpen] = useState(false); 
 
   return (
     <nav className="bg-gray-900 text-white flex flex-col md:flex-row justify-between items-center md:h-16 p-2 shadow-2xl z-10">
 
       <div className="w-full flex justify-between items-center">
-        {/* Logo */}
-        <div className="flex gap-1 text-xl md:text-2xl items-center">
+        {/* Logo - Now Acts as Home Button */}
+        <Link href="/" className="flex gap-1 text-xl md:text-2xl items-center font-bold font-serif cursor-pointer transition-transform duration-200 hover:scale-105">
           <img src="/favicon.gif" alt="logo" width={35} />
-          <span className="font-bold font-serif">
+          <span>
             <span>Oceanic</span><span className="text-[#48bf91]">Edge</span>
           </span>
-        </div>
+        </Link>
 
-        {/* **Hamburger Menu for Mobile** */}
+        {/* Hamburger Menu for Mobile */}
         <button className="md:hidden text-white text-2xl" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
       </div>
 
-      {/* **Menu Items - Mobile and Desktop** */}
-      <div className={`w-full md:flex-row md:items-center md:justify-center md:gap-8 font-bold text-lg ${menuOpen ? "flex flex-col items-center gap-4 mt-4" : "hidden md:flex"}`}>
-        <Link className="hover:text-[#48bf91]" href="/">Home</Link>
-        <Link href="#about" className="hover:text-[#48bf91]" onClick={(e) => {
-          e.preventDefault();
-          document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
-        }}>About</Link>
-      </div>
-
-      {/* **Dropdown Buttons - Positioned Properly** */}
+      {/* Menu Items - Mobile and Desktop */}
       <div className={`flex flex-row gap-1 items-center justify-center ${menuOpen ? "mt-4 px-2" : "hidden md:flex"}`}>
-      
-
-        {/* **Dropdown 1 - Department** */}
+        {/* Dropdown 1 - Department */}
         <div className="relative">
-        <button 
+          <button 
             onClick={() => setShowDropdown(!showDropdown)} 
-            className="w-[175px] text-white bg-blue-700 hover:bg-blue-800 font-small md:font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"> {}
+            className="w-[175px] text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between">
             Department (IIT KGP)
             <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" /></svg>
           </button>
-
           <div className={`${showDropdown ? "block" : "hidden"} absolute left-0 md:left-auto bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}>
             <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">
-              <li><Link href="/faculty" onClick={() => setShowDropdown(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Faculty</Link></li>
-              <li><Link href="/location" onClick={() => setShowDropdown(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Location</Link></li>
-              <li><Link href="/lab" onClick={() => setShowDropdown(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Lab Facilities</Link></li>
-              <li><Link href="/events" onClick={() => setShowDropdown(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Events</Link></li>
-              <li><Link href="/visualgallery" onClick={() => setShowDropdown(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Visual Gallery</Link></li>
+              <li><Link href="/faculty" className="block px-4 py-2 hover:bg-[#48bf91]">Faculty</Link></li>
+              <li><Link href="/location" className="block px-4 py-2 hover:bg-[#48bf91]">Location</Link></li>
+              <li><Link href="/lab" className="block px-4 py-2 hover:bg-[#48bf91]">Lab Facilities</Link></li>
+              <li><Link href="/events" className="block px-4 py-2 hover:bg-[#48bf91]">Events</Link></li>
+              <li><Link href="/visualgallery" className="block px-4 py-2 hover:bg-[#48bf91]">Visual Gallery</Link></li>
+              <li><Link href="/curriculum" className="block px-4 py-2 hover:bg-[#48bf91]">Curriculum</Link></li>
+              <li><Link href="/publication" className="block px-4 py-2 hover:bg-[#48bf91]">Publications</Link></li>
             </ul>
           </div>
         </div>
 
-        {/* **Dropdown 2 - Student Resources** */}
+        {/* Dropdown 2 - Student Resources */}
         <div className="relative">
           <button 
             onClick={() => setShowDropdown2(!showDropdown2)} 
-            className="w-[175px] text-white bg-blue-700 hover:bg-blue-800 font small md:font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"> {/* **Increased width to 175px and used justify-between** */}
+            className="w-[175px] text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between">
             Student Resources
             <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" /></svg>
           </button>
-
           <div className={`${showDropdown2 ? "block" : "hidden"} absolute left-0 md:left-auto bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}>
             <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">
-              <li><Link href="/terminologies" onClick={() => setShowDropdown2(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Terminologies</Link></li>
-              <li><Link href="/numericals" onClick={() => setShowDropdown2(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Basic Calculations</Link></li>
-              <li><Link href="/fleet" onClick={() => setShowDropdown2(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Global Fleet 2024</Link></li>
-              <li><Link href="/publication" onClick={() => setShowDropdown2(false)} className="block px-4 py-2 hover:bg-[#48bf91]">Publications</Link></li>
+              <li><Link href="/terminologies" className="block px-4 py-2 hover:bg-[#48bf91]">Terminologies</Link></li>
+              <li><Link href="/numericals" className="block px-4 py-2 hover:bg-[#48bf91]">Basic Calculations</Link></li>
+              <li><Link href="/fleet" className="block px-4 py-2 hover:bg-[#48bf91]">Global Fleet 2024</Link></li>
             </ul>
           </div>
         </div>
