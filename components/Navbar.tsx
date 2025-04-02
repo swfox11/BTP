@@ -444,9 +444,9 @@ const Navbar = () => {
             </svg>
           </button>
           <div 
-            className={`${showDropdown ? "block" : "hidden"} absolute left-0 md:left-auto bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}
+            className={`${showDropdown ? "block" : "hidden"} absolute left-0 md:left-auto bg-gray-800 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}
           >
-            <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">
+            <ul className="py-2 text-sm font-semibold text-gray-100 dark:text-gray-200">
               {[
                 { href: "/faculty", text: "Faculty" },
                 { href: "/location", text: "Location" },
@@ -483,9 +483,9 @@ const Navbar = () => {
             </svg>
           </button>
           <div 
-            className={`${showDropdown2 ? "block" : "hidden"} absolute left-0 md:left-auto bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}
+            className={`${showDropdown2 ? "block" : "hidden"} absolute left-0 md:left-auto bg-gray-800 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}
           >
-            <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">
+            <ul className="py-2 text-sm font-semibold text-gray-100 dark:text-gray-200">
               {[
                 { href: "/terminologies", text: "Terminologies" },
                 { href: "/numericals", text: "Basic Calculations" },
