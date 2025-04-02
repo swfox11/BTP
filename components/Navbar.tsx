@@ -351,7 +351,6 @@
 
 
 
-
 "use client"
 import Link from 'next/link'
 import React, { useState, useEffect, useRef } from 'react'
@@ -360,20 +359,22 @@ const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showDropdown2, setShowDropdown2] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const dropdownRef = useRef(null);
-  const dropdownRef2 = useRef(null);
-  const buttonRef = useRef(null);
-  const buttonRef2 = useRef(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownRef2 = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const buttonRef2 = useRef<HTMLButtonElement>(null);
 
   // Close dropdowns when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target) && 
-          buttonRef.current && !buttonRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Node;
+      
+      if (dropdownRef.current && !dropdownRef.current.contains(target) && 
+          buttonRef.current && !buttonRef.current.contains(target)) {
         setShowDropdown(false);
       }
-      if (dropdownRef2.current && !dropdownRef2.current.contains(event.target) && 
-          buttonRef2.current && !buttonRef2.current.contains(event.target)) {
+      if (dropdownRef2.current && !dropdownRef2.current.contains(target) && 
+          buttonRef2.current && !buttonRef2.current.contains(target)) {
         setShowDropdown2(false);
       }
     };
@@ -384,24 +385,32 @@ const Navbar = () => {
     };
   }, []);
 
-  const toggleDropdown = (e) => {
+  const toggleDropdown = (e: React.MouseEvent) => {
     e.stopPropagation();
-    setShowDropdown(!showDropdown);
+    setShowDropdown(prev => !prev);
     setShowDropdown2(false);
   };
 
-  const toggleDropdown2 = (e) => {
+  const toggleDropdown2 = (e: React.MouseEvent) => {
     e.stopPropagation();
-    setShowDropdown2(!showDropdown2);
+    setShowDropdown2(prev => !prev);
     setShowDropdown(false);
+  };
+
+  const closeAllDropdowns = () => {
+    setShowDropdown(false);
+    setShowDropdown2(false);
   };
 
   return (
     <nav className="bg-gray-900 text-white flex flex-col md:flex-row justify-between items-center md:h-16 p-2 shadow-2xl z-10">
-
       <div className="w-full flex justify-between items-center">
         {/* Logo - Now Acts as Home Button */}
-        <Link href="/" className="flex gap-1 text-xl md:text-2xl items-center font-bold font-serif cursor-pointer transition-transform duration-200 hover:scale-105">
+        <Link 
+          href="/" 
+          className="flex gap-1 text-xl md:text-2xl items-center font-bold font-serif cursor-pointer transition-transform duration-200 hover:scale-105"
+          onClick={closeAllDropdowns}
+        >
           <img src="/favicon.gif" alt="logo" width={35} />
           <span>
             <span>Oceanic</span><span className="text-[#48bf91]">Edge</span>
@@ -413,7 +422,7 @@ const Navbar = () => {
           className="md:hidden text-white text-2xl" 
           onClick={(e) => {
             e.stopPropagation();
-            setMenuOpen(!menuOpen);
+            setMenuOpen(prev => !prev);
           }}
         >
           ☰
@@ -423,49 +432,75 @@ const Navbar = () => {
       {/* Menu Items - Mobile and Desktop */}
       <div className={`flex flex-row gap-1 items-center justify-center ${menuOpen ? "mt-4 px-2" : "hidden md:flex"}`}>
         {/* Dropdown 1 - Department */}
-        <div className="relative">
+        <div className="relative" ref={dropdownRef}>
           <button 
             ref={buttonRef}
             onClick={toggleDropdown}
             className="w-[175px] text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"
           >
             Department (IIT KGP)
-            <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" /></svg>
+            <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+            </svg>
           </button>
           <div 
-            ref={dropdownRef}
             className={`${showDropdown ? "block" : "hidden"} absolute left-0 md:left-auto bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}
           >
             <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">
-              <li><Link href="/faculty" className="block px-4 py-2 hover:bg-[#48bf91]" onClick={() => setShowDropdown(false)}>Faculty</Link></li>
-              <li><Link href="/location" className="block px-4 py-2 hover:bg-[#48bf91]" onClick={() => setShowDropdown(false)}>Location</Link></li>
-              <li><Link href="/lab" className="block px-4 py-2 hover:bg-[#48bf91]" onClick={() => setShowDropdown(false)}>Lab Facilities</Link></li>
-              <li><Link href="/events" className="block px-4 py-2 hover:bg-[#48bf91]" onClick={() => setShowDropdown(false)}>Events</Link></li>
-              <li><Link href="/visualgallery" className="block px-4 py-2 hover:bg-[#48bf91]" onClick={() => setShowDropdown(false)}>Visual Gallery</Link></li>
-              <li><Link href="/curriculum" className="block px-4 py-2 hover:bg-[#48bf91]" onClick={() => setShowDropdown(false)}>Curriculum</Link></li>
-              <li><Link href="/publication" className="block px-4 py-2 hover:bg-[#48bf91]" onClick={() => setShowDropdown(false)}>Publications</Link></li>
+              {[
+                { href: "/faculty", text: "Faculty" },
+                { href: "/location", text: "Location" },
+                { href: "/lab", text: "Lab Facilities" },
+                { href: "/events", text: "Events" },
+                { href: "/visualgallery", text: "Visual Gallery" },
+                { href: "/curriculum", text: "Curriculum" },
+                { href: "/publication", text: "Publications" },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link 
+                    href={item.href} 
+                    className="block px-4 py-2 hover:bg-[#48bf91]"
+                    onClick={closeAllDropdowns}
+                  >
+                    {item.text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
         {/* Dropdown 2 - Student Resources */}
-        <div className="relative">
+        <div className="relative" ref={dropdownRef2}>
           <button 
             ref={buttonRef2}
             onClick={toggleDropdown2}
             className="w-[175px] text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"
           >
             Student Resources
-            <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" /></svg>
+            <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+            </svg>
           </button>
           <div 
-            ref={dropdownRef2}
             className={`${showDropdown2 ? "block" : "hidden"} absolute left-0 md:left-auto bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}
           >
             <ul className="py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">
-              <li><Link href="/terminologies" className="block px-4 py-2 hover:bg-[#48bf91]" onClick={() => setShowDropdown2(false)}>Terminologies</Link></li>
-              <li><Link href="/numericals" className="block px-4 py-2 hover:bg-[#48bf91]" onClick={() => setShowDropdown2(false)}>Basic Calculations</Link></li>
-              <li><Link href="/fleet" className="block px-4 py-2 hover:bg-[#48bf91]" onClick={() => setShowDropdown2(false)}>Global Fleet 2024</Link></li>
+              {[
+                { href: "/terminologies", text: "Terminologies" },
+                { href: "/numericals", text: "Basic Calculations" },
+                { href: "/fleet", text: "Global Fleet 2024" },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link 
+                    href={item.href} 
+                    className="block px-4 py-2 hover:bg-[#48bf91]"
+                    onClick={closeAllDropdowns}
+                  >
+                    {item.text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
