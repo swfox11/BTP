@@ -450,7 +450,7 @@ const Navbar = () => {
               {[
                 { href: "/faculty", text: "Faculty" },
                 { href: "/location", text: "Location" },
-                { href: "/lab", text: "Lab Facilities" },
+                { href: "/labfacilities", text: "Lab Facilities" },
                 { href: "/events", text: "Events" },
                 { href: "/visualgallery", text: "Visual Gallery" },
                 { href: "/curriculum", text: "Curriculum" },

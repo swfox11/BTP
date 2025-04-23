@@ -55,7 +55,8 @@ const numericals = [
   { title: 'Vertical Prismatic Coefficient', path: '/numericals/vp' },
   { title: 'Transverse Metacentric Radius (BM) for Rectangular Barge', path: '/numericals/transverse_meta' },
   { title: 'Longitudinal Metacentric Radius (BML) for Rectangular Barge', path: '/numericals/longitudinal_meta' },
-  { title: 'Initial Stability Calculation (GM) for Rectangular Barge', path: '/numericals/stability' }
+  { title: 'Initial Stability Calculation (GM) for Rectangular Barge', path: '/numericals/stability' },
+  { title: 'Encounter Frequency Calculation (ωₑ) in Sea Keeping', path: '/numericals/encounterfrequency' }
 ];
 
 const NumericalsPage = () => {
