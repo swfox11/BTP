@@ -454,7 +454,7 @@ const Navbar = () => {
                 { href: "/events", text: "Events" },
                 { href: "/visualgallery", text: "Visual Gallery" },
                 { href: "/curriculum", text: "Curriculum" },
-                { href: "/publication", text: "Publications" },
+                { href: "/publications", text: "Publications" },
               ].map((item) => (
                 <li key={item.href}>
                   <Link 
