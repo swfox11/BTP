@@ -4,7 +4,7 @@ import React from 'react';
 
 const PublicationsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-300 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Publications</h1>
@@ -20,7 +20,7 @@ const PublicationsPage = () => {
           {/* Journals Button */}
           <Link
             href="/publications/journals"
-            className="group block p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+            className="group block p-8 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-shadow duration-300 text-center"
           >
             <div className="mx-auto h-24 w-24 flex items-center justify-center rounded-full bg-green-100 group-hover:bg-green-200 transition-colors duration-300 mb-6">
               <svg

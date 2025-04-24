@@ -127,7 +127,7 @@
 
 // app/department/publications/journals/page.tsx
 // app/department/publications/journals/page.tsx
-import Link from 'next/link';
+
 
 const JournalsPage = () => {
   // Publications data with only required fields
