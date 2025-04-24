@@ -47,7 +47,7 @@ const ReynoldsNumberPage = () => {
 
   return (
     <div className="p-6 max-w-xl mx-auto bg-white rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold mb-4 text-blue-800">Reynolds Number (Re) Calculator</h1>
+      <h1 className="text-2xl font-bold mb-4 text-blue-800">Reynolds Number (Rn) Calculator</h1>
       
       {/* Formula Display */}
       <div className="mb-6 p-4 bg-blue-50 rounded-lg">
@@ -55,7 +55,7 @@ const ReynoldsNumberPage = () => {
         <div className="flex items-center justify-center">
           <div className="text-center">
             <p className="font-mono text-lg bg-gray-100 p-2 rounded">
-              Re = (V × L) / ν
+              Rn = (V × L) / ν
             </p>
             <div className="mt-2 grid grid-cols-3 gap-2 text-sm">
               <div className="bg-gray-100 p-1 rounded">V = Velocity (m/s)</div>
@@ -133,9 +133,9 @@ const ReynoldsNumberPage = () => {
           <div className="mt-4 text-sm">
             <p className="font-medium">Flow Regime:</p>
             <ul className="list-disc pl-5 space-y-1 mt-1">
-              <li>Re &lt; 2,300: Laminar flow</li>
-              <li>2,300 ≤ Re ≤ 4,000: Transitional flow</li>
-              <li>Re &gt; 4,000: Turbulent flow</li>
+              <li>Rn &lt; 2,300: Laminar flow</li>
+              <li>2,300 ≤ Rn ≤ 4,000: Transitional flow</li>
+              <li>Rn &gt; 4,000: Turbulent flow</li>
             </ul>
           </div>
         </div>
