@@ -25,6 +25,17 @@ const CmPage = () => {
   return (
     <div className="p-6 max-w-xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">Calculate Midship Coefficient (C<sub>m</sub>)</h1>
+      
+      {/* Formula Display */}
+      <div className="mb-4 p-3 bg-gray-100 rounded">
+        <p className="font-mono text-center">
+          C<sub>m</sub> = A<sub>m</sub> / (B × T)
+        </p>
+        <p className="text-sm mt-1 text-center">
+          Where: A<sub>m</sub> = Midship-section area (m²), B = Breadth (m), T = Draught (m)
+        </p>
+      </div>
+
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -34,7 +45,7 @@ const CmPage = () => {
       >
         <div>
           <label htmlFor="midshipArea" className="block font-semibold">
-            Midship-Section Area (A<sub>m</sub>) (m<sup>2</sup>):
+            Midship-Section Area (A<sub>m</sub>) (m²):
           </label>
           <input
             type="number"
