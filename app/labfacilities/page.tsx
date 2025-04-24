@@ -5,6 +5,7 @@ const LabFacilities = () => {
   const videos = [
     { id: 'aKR-YY3uSMw', title: 'Friction Stir Welding (FSW)' },
     { id: '5pjetUMAMIU', title: 'Sub-merged Arc Welding (SAW)' },
+    { id: 'sA2vUWTvyfM', title: 'Wave Maker at Hydrodynamics Laboratory' },
     // { id: 'JGwWNGJdvx8', title: 'Student Experiments' },
     // { id: 'kJQP7kiw5Fk', title: 'Lab Safety Protocols' },
     // { id: 'RgKAFK5djSk', title: 'Innovation Center' },

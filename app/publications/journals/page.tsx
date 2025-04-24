@@ -388,7 +388,7 @@ const JournalsPage = () => {
         </div>
 
         {/* Back Button */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <Link
             href="/publications"
             className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
@@ -398,15 +398,15 @@ const JournalsPage = () => {
             </svg>
             Back to Publications
           </Link>
-        </div>
+        </div> */}
 
         {/* Publications Grid */}
-        <div className="grid gap-10 shadow-lg md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-16 shadow-lg md:grid-cols-2 lg:grid-cols-3">
           {publications.map((pub, index) => (
-            <article key={index} className="bg-gray-200 shadow-lg hover:shadow-2xl transition-shadow duration-500 transform hover:-translate-y-2 hover:scale-105 rounded-lg border border-gray-200 overflow-hidden">
+            <article key={index} className="bg-gray-200 shadow-lg hover:shadow-2xl hover:bg-white transition-shadow duration-500 transform hover:-translate-y-2 hover:scale-105 rounded-lg border border-gray-200 overflow-hidden">
               <div className="p-6 ">
                 {/* Publication Title */}
-                <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                <h1 className="text-xl font-semibold text-gray-800 mb-2">
                   <a 
                     href={pub.link} 
                     target="_blank" 
@@ -415,7 +415,7 @@ const JournalsPage = () => {
                   >
                     {pub.title}
                   </a>
-                </h2>
+                </h1>
                 
                 {/* Authors */}
                 <p className="text-sm text-gray-600 mb-3">
