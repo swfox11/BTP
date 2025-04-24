@@ -9,7 +9,7 @@ const PublicationsPage = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Publications</h1>
           <p className="text-xl text-gray-600">
-            Explore our department's research contributions
+            Explore our department&apos;s research contributions
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const PublicationsPage = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Books</h3>
             <p className="text-gray-600">
-              Explore our department's published books
+              Explore our department&apos;s published books
             </p>
           </Link>
 
