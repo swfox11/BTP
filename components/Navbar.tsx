@@ -436,7 +436,7 @@ const Navbar = () => {
           <button 
             ref={buttonRef}
             onClick={toggleDropdown}
-            className="w-[175px] text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"
+            className="w-[175px] border border-white text-white hover:text-[#48bf91] font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"
           >
             Department (IIT KGP)
             <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6">
@@ -444,9 +444,9 @@ const Navbar = () => {
             </svg>
           </button>
           <div 
-            className={`${showDropdown ? "block" : "hidden"} absolute left-0 md:left-auto bg-gray-800 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}
+            className={`${showDropdown ? "block" : "hidden"} absolute left-0 top-[50px] md:left-auto bg-gray-800 text-white border border-gray-700 rounded-lg hover:bg-gray-900 shadow w-44 dark:bg-gray-900 z-50`}
           >
-            <ul className="py-2 text-sm font-semibold text-gray-100 dark:text-gray-200">
+            <ul className="text-sm font-semibold py-2">
               {[
                 { href: "/faculty", text: "Faculty" },
                 { href: "/location", text: "Location" },
@@ -459,7 +459,7 @@ const Navbar = () => {
                 <li key={item.href}>
                   <Link 
                     href={item.href} 
-                    className="block px-4 py-2 hover:bg-[#48bf91]"
+                    className="block px-4 py-2 hover:text-[#48bf91]"
                     onClick={closeAllDropdowns}
                   >
                     {item.text}
@@ -475,7 +475,7 @@ const Navbar = () => {
           <button 
             ref={buttonRef2}
             onClick={toggleDropdown2}
-            className="w-[175px] text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"
+            className="w-[175px] border border-white text-white hover:text-[#48bf91] font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"
           >
             Student Resources
             <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6">
@@ -483,9 +483,9 @@ const Navbar = () => {
             </svg>
           </button>
           <div 
-            className={`${showDropdown2 ? "block" : "hidden"} absolute left-0 md:left-auto bg-gray-800 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 z-50`}
+            className={`${showDropdown2 ? "block" : "hidden"} absolute left-0 top-[50px] md:left-auto bg-gray-800 text-white border border-gray-700 rounded-lg hover:bg-gray-900 shadow w-44 dark:bg-gray-900 z-50`}
           >
-            <ul className="py-2 text-sm font-semibold text-gray-100 dark:text-gray-200">
+            <ul className="text-sm font-semibold py-2">
               {[
                 { href: "/terminologies", text: "Terminologies" },
                 { href: "/numericals", text: "Basic Calculations" },
@@ -494,7 +494,7 @@ const Navbar = () => {
                 <li key={item.href}>
                   <Link 
                     href={item.href} 
-                    className="block px-4 py-2 hover:bg-[#48bf91]"
+                    className="block px-4 py-2 hover:text-[#48bf91]"
                     onClick={closeAllDropdowns}
                   >
                     {item.text}
