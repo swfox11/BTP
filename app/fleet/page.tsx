@@ -254,17 +254,17 @@ const FleetDocumentsPage = () => {
     <div className="p-6 bg-gray-300 ">
       <h1 className="text-3xl font-bold mb-6 text-center text-blue-800">Global fleet and maritime trade</h1>
       
-      <div className="space-y-16 m-2">
+      <div className="space-y-16 m-2 md:m-16">
         {pdfDocuments.length > 0 ? (
           pdfDocuments.map((doc) => (
             <div key={doc.id} className="bg-gray-100 hover:bg-white rounded-lg shadow-md overflow-hidden">
               <div className="p-6 border-b">
-                <h2 className="text-2xl font-semibold text-gray-800">{doc.title}</h2>
-                <p className="mt-2 text-gray-600">{doc.description}</p>
+                <h2 className="text-2xl text-center font-semibold text-gray-800">{doc.title}</h2>
+                <p className="mt-2 text-gray-600 text-center">{doc.description}</p>
                 <div className="mt-4 flex flex-wrap gap-3 items-center text-sm text-gray-500">
                   {/* <span>Last updated: {doc.lastUpdated}</span> */}
-                  <span>•</span>
-                  <span>File size: {doc.fileSize}</span>
+                  {/* <span>•</span> */}
+                  
                 </div>
               </div>
 
@@ -296,7 +296,7 @@ const FleetDocumentsPage = () => {
                     href={doc.filePath}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full px-4 py-3 bg-gray-100 text-gray-800 rounded hover:bg-gray-200 transition-colors text-center"
+                    className="w-full px-4 py-3 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition-colors text-center"
                   >
                     Open in New Tab
                   </a>
@@ -306,6 +306,7 @@ const FleetDocumentsPage = () => {
                       <li>Format: PDF</li>
                       <li>Pages: {doc.pages}</li>
                       <li>Security: Unrestricted</li>
+                      <li><span>File size: {doc.fileSize}</span></li>
                     </ul>
                   </div>
                 </div>
