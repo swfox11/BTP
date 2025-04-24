@@ -97,7 +97,7 @@ const LongitudinalMetacentricRadiusPage = () => {
             <ul className="list-disc pl-5 space-y-1 mt-1">
               <li>Higher BM<sub>L</sub> indicates greater longitudinal stability</li>
               <li>Directly related to vessel length and inversely to draught</li>
-              <li>Affects vessel's pitching characteristics</li>
+              <li>Affects vessel&apos;s pitching characteristics</li>
             </ul>
           </div>
         </div>
