@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="w-full text-white bg-black ">
       {/* Hero Section */}
-
+      
       {/* <section className="gif flex flex-col items-center justify-center text-center pt-24 pb-72 px-4"> GIF */}
       <section
         className={`flex flex-col items-center justify-center text-center pt-24 pb-72 px-4 transition-opacity duration-500 opacity-100`}
