@@ -377,7 +377,7 @@ const JournalsPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-300 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Page Header */}
         <div className="text-center mb-12">
@@ -401,10 +401,10 @@ const JournalsPage = () => {
         </div>
 
         {/* Publications Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 shadow-lg md:grid-cols-2 lg:grid-cols-3">
           {publications.map((pub, index) => (
-            <article key={index} className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-              <div className="p-6">
+            <article key={index} className="bg-gray-200 shadow-lg hover:shadow-2xl transition-shadow duration-500 transform hover:-translate-y-2 hover:scale-105 rounded-lg border border-gray-200 overflow-hidden">
+              <div className="p-6 ">
                 {/* Publication Title */}
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">
                   <a 
