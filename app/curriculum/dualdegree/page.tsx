@@ -152,7 +152,7 @@ const electives = {
 const DualDegreeCurriculum = () => {
   return (
     <div className="min-h-screen bg-gray-800 text-white py-10 px-6">
-      <h1 className="text-4xl font-bold text-center mb-8">Dual Degree Curriculum</h1>
+      <h1 className="text-4xl font-bold drop-shadow-lg text-center mb-8">Dual Degree Curriculum</h1>
       
       {/* Combined Semester 1 and 2 */}
       <div className="mb-12">
@@ -231,7 +231,7 @@ const DualDegreeCurriculum = () => {
         <h2 className="text-2xl font-semibold mb-4 text-blue-400">Electives</h2>
         
         <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-3 text-green-400">Depth Elective I Options</h3>
+          <h3 className="text-xl font-semibold mb-3 text-[#48bf91]">Depth Elective I Options</h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-gray-600">
               <thead>
@@ -263,7 +263,7 @@ const DualDegreeCurriculum = () => {
         </div>
 
         <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-3 text-green-400">Depth Electives II-V Options</h3>
+          <h3 className="text-xl font-semibold mb-3 text-[#48bf91]">Depth Electives II-V Options</h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-gray-600">
               <thead>
@@ -295,7 +295,7 @@ const DualDegreeCurriculum = () => {
         </div>
 
         <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-3 text-green-400">Depth Electives VI-IX Options</h3>
+          <h3 className="text-xl font-semibold mb-3 text-[#48bf91]">Depth Electives VI-IX Options</h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-gray-600">
               <thead>

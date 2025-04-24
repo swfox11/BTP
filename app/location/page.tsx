@@ -3,8 +3,8 @@ import React from "react";
 const LocationPage = () => {
   
   return (
-    <div className="min-h-screen bg-gray-200 flex flex-col items-center justify-center pt-10 pb-10 bg-lightBlue">
-      <h1 className="text-4xl font-bold text-blue-800 mb-6 transition-transform transform hover:scale-105">
+    <div className="min-h-screen bg-[#f4f4f4] flex flex-col items-center justify-center pt-10 pb-10">
+      <h1 className="text-4xl font-extrabold text-[#2a526c] drop-shadow-lg mb-6 transition-transform transform hover:scale-105">
         Visit Us
       </h1>
       <p className="text-lg text-gray-700 mb-6 text-center max-w-3xl">
@@ -23,7 +23,7 @@ const LocationPage = () => {
       <a
         href="https://www.iitkgp.ac.in/department/NA"
         target="_blank"
-        className="mt-6 bg-[#48bf91] text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-[#3a9d76] transition duration-300"
+        className="mt-6 bg-[#48bf91] text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-[#3ca97d] transition duration-300"
         rel="noopener noreferrer"
       >
         Visit Official Department Website

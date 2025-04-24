@@ -36,12 +36,12 @@ const photosSamudramanthan = [
 
 const EventsPage = () => {
   return (
-    <div className="bg-gray-200">
-      <h1 className="text-4xl font-bold text-blue-800 text-center my-10">Department Events</h1>
+    <div className="bg-[#f4f4f4]">
+      <h1 className="text-4xl font-extrabold text-[#2a526c] text-center drop-shadow-lg my-10">Department Events</h1>
 
       {/* ICSOT Section */}
       <section className="bg-white p-10 shadow-lg my-10 rounded-md">
-        <h2 className="text-3xl font-bold text-center text-[#48bf91] mb-6">ICSOT - India</h2>
+        <h2 className="text-3xl font-bold text-center transition-transform transform hover:scale-105 text-[#48bf91] mb-6">ICSOT - India</h2>
 
         {/* Slider */}
         <div className="my-8">
@@ -66,13 +66,13 @@ const EventsPage = () => {
         </div>
 
         {/* Content */}
-        <p className="text-gray-700 leading-8 font-semibold text-lg">
+        <p className="text-gray-700 leading-8 font-medium text-lg">
           The International Conference on Ship and Offshore Technology (ICSOT) is a premier event
           initiated by the Royal Institution of Naval Architects (RINA). It serves as a platform
           to advance research and explore practical applications in shipbuilding, offshore
           technology, and marine engineering.
         </p>
-        <p className="text-gray-700 leading-8 font-semibold text-lg mt-4">
+        <p className="text-gray-700 leading-8 font-medium text-lg mt-4">
           Hosted multiple times by IIT Kharagpur’s Department of Ocean Engineering and Naval
           Architecture, ICSOT fosters collaboration between academia and industry. The department
           hosted its first ICSOT in 2009, with the latest edition in 2023 showcasing cutting-edge
@@ -97,7 +97,7 @@ const EventsPage = () => {
         </div>
 
         {/* Gallery */}
-        <h3 className="text-2xl font-semibold mt-10">Visual Gallery from the Latest Edition</h3>
+        <h3 className="text-2xl text-gray-900 font-semibold mt-10">Visual Gallery from the Latest Edition</h3>
         <div className="grid grid-cols-3 gap-4 mt-6">
           {photosICSOT.slice(3).map((src, index) => (
             <img
@@ -112,7 +112,7 @@ const EventsPage = () => {
 
       {/* Samudramanthan Section */}
       <section className="bg-gray-50 p-10 shadow-lg my-10 rounded-md">
-        <h2 className="text-3xl font-bold text-center text-[#48bf91] mb-6">Samudramanthan</h2>
+        <h2 className="text-3xl font-bold text-center transition-transform transform hover:scale-105 text-[#48bf91] mb-6">Samudramanthan</h2>
 
         {/* Slider */}
         <div className="my-8">
@@ -137,13 +137,13 @@ const EventsPage = () => {
         </div>
 
         {/* Content */}
-        <p className="text-gray-700 leading-8 font-semibold text-lg">
+        <p className="text-gray-700 leading-8 font-medium text-lg">
           Samudramanthan is an annual technical festival organized by the Department of Ocean
           Engineering and Naval Architecture at IIT Kharagpur. It offers a platform for students
           across India to showcase ideas and gain practical exposure in marine sciences and naval
           architecture.
         </p>
-        <p className="text-gray-700 leading-8 font-semibold text-lg mt-4">
+        <p className="text-gray-700 leading-8 font-medium text-lg mt-4">
           From technical competitions to industry interactions, the festival bridges the gap
           between academia and the industry. Workshops, seminars, and networking opportunities
           enhance skills while keeping participants updated with the latest trends in the field.
@@ -167,7 +167,7 @@ const EventsPage = () => {
         </div>
 
         {/* Gallery */}
-        <h3 className="text-2xl font-semibold mt-10">Visual Gallery from the Latest Edition</h3>
+        <h3 className="text-2xl text-gray-900 font-semibold mt-10">Visual Gallery from the Latest Edition</h3>
         <div className="grid grid-cols-3 gap-4 mt-6">
           {photosSamudramanthan.slice(3).map((src, index) => (
             <img

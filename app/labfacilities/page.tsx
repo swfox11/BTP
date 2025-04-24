@@ -13,15 +13,15 @@ const LabFacilities = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-200 to-gray-200 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#f4f4f4] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-blue-800 sm:text-5xl sm:tracking-tight lg:text-6xl">
+          <h1 className="text-4xl font-extrabold text-center text-[#2a526c] mb-10 drop-shadow-lg">
             Lab Facilities 
           </h1>
-          <p className="mt-5 max-w-xl mx-auto text-xl text-gray-500">
-            Explore our state-of-the-art research laboratories and equipment at the Department of Ocean Engineering & Naval Architecture, IITKGP
+          <p className="mt-5 max-w-xl mx-auto text-xl font-semibold text-gray-700">
+            Explore our state-of-the-art research laboratories and equipment at the Department of Ocean Engineering & Naval Architecture
           </p>
         </div>
 
@@ -30,7 +30,7 @@ const LabFacilities = () => {
           {videos.map((video) => (
             <div 
               key={video.id} 
-              className="bg-gray-400 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-shadow duration-300"
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-shadow duration-300"
             >
               <div className="aspect-w-16 aspect-h-9 rounded-xl">
                 <iframe
@@ -42,7 +42,7 @@ const LabFacilities = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-100">{video.title}</h3>
+                <h3 className="font-medium text-gray-700">{video.title}</h3>
                 <div className="mt-4 flex justify-end">
                   <a
                     href={`https://youtube.com/watch?v=${video.id}`}
@@ -63,7 +63,7 @@ const LabFacilities = () => {
           <div className="inline-flex rounded-md shadow">
             <a
               href="#"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#48bf91] hover:bg-[#3ca97d]"
             >
               Schedule a Lab Tour
             </a>

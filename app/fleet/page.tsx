@@ -251,13 +251,13 @@ const FleetDocumentsPage = () => {
   }
 
   return (
-    <div className="p-6 bg-gray-300 ">
-      <h1 className="text-3xl font-bold mb-6 text-center text-blue-800">Global fleet and maritime trade</h1>
+    <div className="p-12 bg-[#f4f4f4]">
+      <h1 className="text-4xl font-extrabold text-center text-[#2a526c] drop-shadow-lg mb-6">Global Fleet and Maritime Trade</h1>
       
       <div className="space-y-16 m-2 md:m-16">
         {pdfDocuments.length > 0 ? (
           pdfDocuments.map((doc) => (
-            <div key={doc.id} className="bg-gray-100 hover:bg-white rounded-lg shadow-md overflow-hidden">
+            <div key={doc.id} className="bg-[#eaf7f2] shadow-lg hover:shadow-2xl hover:bg-white transition-shadow duration-500 transform hover:-translate-y-2 hover:scale-105 rounded-lg border border-gray-100 overflow-hidden">
               <div className="p-6 border-b">
                 <h2 className="text-2xl text-center font-semibold text-gray-800">{doc.title}</h2>
                 <p className="mt-2 text-gray-600 text-center">{doc.description}</p>
@@ -288,7 +288,7 @@ const FleetDocumentsPage = () => {
                   <a
                     href={doc.filePath}
                     download
-                    className="w-full px-4 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-center"
+                    className="w-full px-4 py-3 bg-[#48bf91] text-white rounded hover:bg-[#3ca97d] transition-colors text-center"
                   >
                     Download PDF
                   </a>

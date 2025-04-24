@@ -56,21 +56,21 @@ const numericals = [
   { title: 'Transverse Metacentric Radius (BM) for Rectangular Barge', path: '/numericals/transverse_meta' },
   { title: 'Longitudinal Metacentric Radius (BML) for Rectangular Barge', path: '/numericals/longitudinal_meta' },
   { title: 'Initial Stability Calculation (GM) for Rectangular Barge', path: '/numericals/stability' },
-  { title: 'Encounter Frequency Calculation (ωₑ) in Sea Keeping', path: '/numericals/encounterfrequency' },
-  { title: 'Reynolds Number Calculation for ships (Rn) ', path: '/numericals/reynolds' },
-  { title: 'Froude Number Calculation for ships (Fn) ', path: '/numericals/froude' }
+  { title: 'Encounter Frequency (ωₑ) in Sea Keeping', path: '/numericals/encounterfrequency' },
+  { title: 'Reynolds Number for ships (Rn) ', path: '/numericals/reynolds' },
+  { title: 'Froude Number for ships (Fn) ', path: '/numericals/froude' }
 ];
 
 const NumericalsPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-200 via-gray-300 to-gray-400 py-16 px-6">
-      <h1 className="text-4xl font-bold text-center text-blue-800 mb-12">
+    <div className="min-h-screen bg-[#f4f4f4] py-16 px-6">
+      <h1 className="text-4xl font-extrabold text-center text-[#2a526c] drop-shadow-lg mb-12">
         Numerical Calculation Tools
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         {numericals.map((numerical, index) => (
           <Link href={numerical.path} key={index}>
-            <div className="cursor-pointer bg-[#48bf91] hover:bg-[#3da57a] text-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
+            <div className="cursor-pointer bg-[#48bf91] hover:bg-[#3ca97d] text-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
               <h3 className="text-lg font-semibold text-center">{numerical.title}</h3>
             </div>
           </Link>

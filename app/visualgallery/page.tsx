@@ -91,14 +91,14 @@ const ImageGallery = () => {
     const router = useRouter();
 
     return (
-        <div className="min-h-screen bg-gray-300 py-12 px-4">
-            <motion.h1 className="text-5xl font-bold text-center text-blue-800 mb-12" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+        <div className="min-h-screen bg-[#f4f4f4] py-12 px-4">
+            <motion.h1 className="text-4xl font-extrabold text-[#2a526c] text-center mb-12" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
                 Visual Gallery
             </motion.h1>
 
             {gallerySections.map((section, index) => (
-                <div key={index} className="mb-16 bg-gray-200 shadow-xl rounded-lg p-6 max-w-screen-xl mx-auto">
-                    <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">{section.title}</h2>
+                <div key={index} className="mb-16 bg-white shadow-xl rounded-lg p-6 max-w-screen-xl mx-auto">
+                    <h2 className="text-2xl font-bold text-gray-700 mb-4 text-center">{section.title}</h2>
 
                     <Swiper
                         modules={[Navigation, Pagination, Autoplay]}

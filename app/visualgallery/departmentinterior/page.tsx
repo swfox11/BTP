@@ -68,12 +68,12 @@ const images: string[] = [
   "/visualgallery/departmentinterior/interior11.jpg",
 ];
 
-const Classrooms: React.FC = () => {
+const DepartmentInterior: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <div className="min-h-screen bg-gray-100 py-16 px-8">
-      <h1 className="text-5xl font-bold text-blue-800 text-center mb-12">Department Building (Interior)</h1>
+    <div className="min-h-screen bg-[#f4f4f4] py-16 px-8">
+      <h1 className="text-4xl font-extrabold text-[#2a526c] text-center drop-shadow-lg mb-12">Department Building (Interior)</h1>
 
       <motion.div 
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
@@ -127,7 +127,7 @@ const Classrooms: React.FC = () => {
       <div className="text-center mt-10">
         <Link href="/visualgallery" className="inline-block">
           <motion.button 
-            className="px-6 py-3 bg-blue-700 text-white rounded-lg shadow-md hover:bg-blue-900 transition duration-300"
+            className="px-6 py-3 bg-[#48bf91] text-white rounded-lg shadow-md hover:bg-[#3ca97d] transition duration-300"
             whileHover={{ scale: 1.05 }}
           >
             Back to Gallery
@@ -138,4 +138,4 @@ const Classrooms: React.FC = () => {
   );
 };
 
-export default Classrooms;
+export default DepartmentInterior;

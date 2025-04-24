@@ -1,14 +1,13 @@
-
 import Link from 'next/link';
 import React from 'react';
 
 const PublicationsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#f4f4f4] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Publications</h1>
-          <p className="text-xl text-gray-600">
+          <h1 className="text-4xl font-extrabold text-center text-[#2a526c] drop-shadow-lg mb-4">Publications</h1>
+          <p className="text-xl text-gray-700">
             Explore our department&apos;s research contributions
           </p>
         </div>
@@ -39,8 +38,8 @@ const PublicationsPage = () => {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Journals</h3>
-            <p className="text-gray-600">
-              View our research published in journals
+            <p className="text-gray-700">
+              View our research work published in journals
             </p>
           </Link>
 
@@ -66,7 +65,7 @@ const PublicationsPage = () => {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Conferences</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-700">
               See our conference papers and presentations
             </p>
           </Link>
@@ -92,7 +91,7 @@ const PublicationsPage = () => {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Books</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-700">
               Explore our department&apos;s published books
             </p>
           </Link>

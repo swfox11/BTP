@@ -318,7 +318,7 @@ const JournalsPage = () => {
         link: "https://www.researchgate.net/publication/388187277_Steady_and_dynamic_load_measurements_over_a_generic_submarine_hull_form_with_various_appendage_configurations"
       },
       {
-        title: "Scattering of surface waves by a semi-infinite floating elastic plate, DOI: 10.1063/5.004528",
+        title: "Scattering of surface waves by a semi-infinite floating elastic plate",
         authors: "T Sahoo, Tsz Leung Yip, Allen T Chwang",
         year: "2001/11/1",
         journal: "Physics of Fluids",
@@ -334,7 +334,7 @@ const JournalsPage = () => {
         link: "https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-9399(2000)126:10(1074)"
       },
       {
-        title: "Role of detuned frequency on Bragg scattering of surface gravity waves over an array of sinusoidal bottom patches: an analytic study, DOI:https://doi.org/10.1016/j.apor.2024.104228",
+        title: "Role of detuned frequency on Bragg scattering of surface gravity waves over an array of sinusoidal bottom patches",
         authors: "Prakash Kar, Trilochan Sahoo, Dezhi Ning",
         year: "2024/12",
         journal: "Applied Ocean Research",
@@ -372,17 +372,16 @@ const JournalsPage = () => {
         journal: "Ocean Engineering",
         description: "The estimation of the sediment flux due to individual ship movement is necessary to identify adverse effects on the river banks in tidally-driven waterways. The separation of each wake event due to ship propagation from the tides is cumbersome. The present study focuses on the study of the ship waves on the sediment resuspension in intertidal waterways through a field survey. The time–frequency analysis proved to be an effective tool for separating the high-frequency ship waves from the tides. The ship-generated SSC was estimated by using the backscattering intensity from the acoustic sensors after proper calibration. The individual effect of each ship wake event on the sediment resuspension was estimated by filtering the ship-generated SSC from the total SSC by using a moving average filter. The overall contribution of the ship waves during the survey tenure was 24.66% with respect to the ambient SSC. The …",
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0029801823016220"
-      },
-
+      }
   ];
 
   return (
-    <div className="min-h-screen bg-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#f4f4f4] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Page Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Journal Publications</h1>
-          <p className="text-lg text-gray-600">
+          <h1 className="text-4xl font-extrabold text-[#2a526c] drop-shadow-lg mb-2">Journal Publications</h1>
+          <p className="text-lg text-gray-700">
             Peer-reviewed research articles from the department
           </p>
         </div>
@@ -401,9 +400,9 @@ const JournalsPage = () => {
         </div> */}
 
         {/* Publications Grid */}
-        <div className="grid gap-16 shadow-lg md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-16 md:grid-cols-2 lg:grid-cols-3">
           {publications.map((pub, index) => (
-            <article key={index} className="bg-gray-200 shadow-lg hover:shadow-2xl hover:bg-white transition-shadow duration-500 transform hover:-translate-y-2 hover:scale-105 rounded-lg border border-gray-200 overflow-hidden">
+            <article key={index} className="bg-gray-100 shadow-lg hover:shadow-2xl hover:bg-white transition-shadow duration-500 transform hover:-translate-y-2 hover:scale-105 rounded-lg border border-gray-100 overflow-hidden">
               <div className="p-6 ">
                 {/* Publication Title */}
                 <h1 className="text-xl font-semibold text-gray-800 mb-2">

@@ -489,7 +489,7 @@ const Navbar = () => {
               {[
                 { href: "/terminologies", text: "Terminologies" },
                 { href: "/numericals", text: "Basic Calculations" },
-                { href: "/fleet", text: "Global Fleet 2024" },
+                { href: "/fleet", text: "Global Fleet" },
               ].map((item) => (
                 <li key={item.href}>
                   <Link 
