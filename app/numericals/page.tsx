@@ -58,7 +58,13 @@ const numericals = [
   { title: 'Initial Stability Calculation (GM) for Rectangular Barge', path: '/numericals/stability' },
   { title: 'Encounter Frequency (ωₑ) in Sea Keeping', path: '/numericals/encounterfrequency' },
   { title: 'Reynolds Number for ships (Rn) ', path: '/numericals/reynolds' },
-  { title: 'Froude Number for ships (Fn) ', path: '/numericals/froude' }
+  { title: 'Froude Number for ships (Fn) ', path: '/numericals/froude' },
+  { title: 'Dispersion relation calculations ', path: '/numericals/dispersion' },
+  { title: 'Period of circulation a floating buoy under coriolis force ', path: '/numericals/coriolis' },
+  { title: 'Energy required (per unit area) to mix a two layered fluid system', path: '/numericals/mixingenergy' },
+  { title: 'Tidal mixing Intensity in an estuary', path: '/numericals/tidalmixingintensity' },
+  { title: 'Wind mixing Intensity in an estuary', path: '/numericals/windmixingintensity' },
+  { title: 'Stratification parameter of an estuary', path: '/numericals/stratificationparameter' },
 ];
 
 const NumericalsPage = () => {
