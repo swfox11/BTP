@@ -203,6 +203,47 @@ export default function Home() {
               </p>
             </div>
             </Link>
+
+            {/* Feature 7 */}
+
+            <Link href="/visualgallery">
+            
+            <div className="p-6 bg-gradient-to-r from-rose-400 to-rose-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+              <h3 className="text-2xl font-semibold mb-4">Visual Gallery</h3>
+              <p className="leading-relaxed">
+                Get immersed in a comprehensive visual tour of our
+                department building, state of the art laboratory facilities and
+                classrooms
+              </p>
+            </div>
+            </Link>
+
+            {/* Feature 8 */}
+
+            <Link href="/curriculum">
+            
+            <div className="p-6 bg-gradient-to-r from-fuchsia-400 to-fuchsia-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+              <h3 className="text-2xl font-semibold mb-4">Curriculum</h3>
+              <p className="leading-relaxed">
+                Get the detailed insight about the different 
+                courses offered at the Department of Ocean Engineering and Naval Architecture
+                at IIT Kharagpur
+              </p>
+            </div>
+            </Link>
+
+            {/* Feature 9 */}
+
+            <Link href="/location">
+            
+            <div className="p-6 bg-gradient-to-r from-teal-400 to-teal-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+              <h3 className="text-2xl font-semibold mb-4">Location</h3>
+              <p className="leading-relaxed">
+              The Department of Ocean Engineering and Naval Architecture at IIT Kharagpur
+              is located in the serene and historic campus of IIT Kharagpur.
+              </p>
+            </div>
+            </Link>
             
           </div>
         </div>
