@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import * as math from 'mathjs';
+
 
 const WaveDispersionPage = () => {
   const [wavelength, setWavelength] = useState<string>('');

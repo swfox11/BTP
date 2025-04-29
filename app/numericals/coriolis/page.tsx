@@ -73,7 +73,7 @@ const CoriolisPeriodPage = () => {
           </div>
         </div>
         <p className="mt-3 text-sm text-gray-600">
-          This is the period of circular motion for a buoy or water parcel under Earth's rotation (inertial oscillations).
+          This is the period of circular motion for a buoy or water parcel under Earth&apos;s rotation (inertial oscillations).
         </p>
       </div>
 
@@ -158,7 +158,7 @@ const CoriolisPeriodPage = () => {
         <h3 className="text-lg font-semibold mb-2">Oceanographic Significance</h3>
         <div className="text-sm text-gray-600 space-y-2">
           <p>
-            <strong>Inertial oscillations</strong> are circular motions of water parcels caused by Earth's rotation.
+            <strong>Inertial oscillations</strong> are circular motions of water parcels caused by Earth&apos;s rotation.
             They are frequently observed in ocean current measurements.
           </p>
           <p>

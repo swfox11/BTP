@@ -72,6 +72,12 @@ const WindMixingPage = () => {
         </button>
       </form>
 
+      {/* Error Display */}
+      {error && (
+        <div className="mt-4 p-3 bg-red-100 border-l-4 border-red-500 text-red-700">
+          <p>{error}</p>
+        </div>
+      )}
       {/* Results */}
       {intensity !== null && (
         <div className="mt-6 p-4 bg-green-50 rounded-lg border border-green-200">
