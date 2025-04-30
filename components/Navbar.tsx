@@ -22,7 +22,7 @@
 //         </div>
 
 //         <div className="flex gap-8 font-bold text-lg items-center justify-center">
-          
+
 //           {/* <Link className={pathname === '/' ? 'active' : ''} href="/">Home</Link> */}
 //           <Link className="hover:text-[#48bf91]" href="/">Home</Link>
 //           {/* <Link className={pathname === '/about' ? 'active' : ''} href="/about">About</Link> */}
@@ -154,7 +154,7 @@
 
 //       {/* **Dropdown Buttons - Positioned Properly** */}
 //       <div className={`flex flex-row gap-1 items-center justify-center ${menuOpen ? "mt-4 px-2" : "hidden md:flex"}`}>
-      
+
 
 //         {/* **Dropdown 1 - Department** */}
 //         <div className="relative">
@@ -368,13 +368,13 @@ const Navbar = () => {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Node;
-      
-      if (dropdownRef.current && !dropdownRef.current.contains(target) && 
-          buttonRef.current && !buttonRef.current.contains(target)) {
+
+      if (dropdownRef.current && !dropdownRef.current.contains(target) &&
+        buttonRef.current && !buttonRef.current.contains(target)) {
         setShowDropdown(false);
       }
-      if (dropdownRef2.current && !dropdownRef2.current.contains(target) && 
-          buttonRef2.current && !buttonRef2.current.contains(target)) {
+      if (dropdownRef2.current && !dropdownRef2.current.contains(target) &&
+        buttonRef2.current && !buttonRef2.current.contains(target)) {
         setShowDropdown2(false);
       }
     };
@@ -403,11 +403,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-900 text-white flex flex-col md:flex-row justify-between items-center md:h-16 p-2 shadow-2xl z-10">
+    <nav className="bg-[#0f172a] text-white flex flex-col md:flex-row justify-between items-center md:h-16 p-2 shadow-2xl z-10">
       <div className="w-full flex justify-between items-center">
         {/* Logo - Now Acts as Home Button */}
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           className="flex gap-1 text-xl md:text-2xl items-center font-bold font-serif cursor-pointer transition-transform duration-200 hover:scale-105"
           onClick={closeAllDropdowns}
         >
@@ -418,8 +418,8 @@ const Navbar = () => {
         </Link>
 
         {/* Hamburger Menu for Mobile */}
-        <button 
-          className="md:hidden text-white text-2xl" 
+        <button
+          className="md:hidden text-white text-3xl hover:bg-opacity-70 p-2 rounded transition-all"
           onClick={(e) => {
             e.stopPropagation();
             setMenuOpen(prev => !prev);
@@ -427,23 +427,24 @@ const Navbar = () => {
         >
           ☰
         </button>
+
       </div>
 
       {/* Menu Items - Mobile and Desktop */}
-      <div className={`flex flex-row gap-1 items-center justify-center ${menuOpen ? "mt-4 px-2" : "hidden md:flex"}`}>
+      <div className={`flex flex-row gap-2 items-center justify-center ${menuOpen ? "mt-4 px-2" : "hidden md:flex"}`}>
         {/* Dropdown 1 - Department */}
         <div className="relative" ref={dropdownRef}>
-          <button 
+          <button
             ref={buttonRef}
             onClick={toggleDropdown}
-            className="w-[175px] border border-white text-white hover:text-[#48bf91] font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"
+            className="w-[175px] border border-white text-white hover:text-[#48bf91] hover:border-[#48bf91] font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"
           >
             Department (IIT KGP)
             <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
             </svg>
           </button>
-          <div 
+          <div
             className={`${showDropdown ? "block" : "hidden"} absolute left-0 top-[50px] md:left-auto bg-gray-800 text-white border border-gray-700 rounded-lg hover:bg-gray-900 shadow w-44 dark:bg-gray-900 z-50`}
           >
             <ul className="text-sm font-semibold py-2">
@@ -457,8 +458,8 @@ const Navbar = () => {
                 { href: "/publications", text: "Publications" },
               ].map((item) => (
                 <li key={item.href}>
-                  <Link 
-                    href={item.href} 
+                  <Link
+                    href={item.href}
                     className="block px-4 py-2 hover:text-[#48bf91]"
                     onClick={closeAllDropdowns}
                   >
@@ -472,17 +473,17 @@ const Navbar = () => {
 
         {/* Dropdown 2 - Student Resources */}
         <div className="relative" ref={dropdownRef2}>
-          <button 
+          <button
             ref={buttonRef2}
             onClick={toggleDropdown2}
-            className="w-[175px] border border-white text-white hover:text-[#48bf91] font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"
+            className="w-[175px] border border-white text-white hover:text-[#48bf91] hover:border-[#48bf91] font-medium rounded-lg text-sm px-2 py-2 inline-flex items-center justify-between"
           >
             Student Resources
             <svg className="w-2.5 h-2.5 ms-0" viewBox="0 0 10 6">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
             </svg>
           </button>
-          <div 
+          <div
             className={`${showDropdown2 ? "block" : "hidden"} absolute left-0 top-[50px] md:left-auto bg-gray-800 text-white border border-gray-700 rounded-lg hover:bg-gray-900 shadow w-44 dark:bg-gray-900 z-50`}
           >
             <ul className="text-sm font-semibold py-2">
@@ -492,8 +493,8 @@ const Navbar = () => {
                 { href: "/fleet", text: "Global Fleet" },
               ].map((item) => (
                 <li key={item.href}>
-                  <Link 
-                    href={item.href} 
+                  <Link
+                    href={item.href}
                     className="block px-4 py-2 hover:text-[#48bf91]"
                     onClick={closeAllDropdowns}
                   >

@@ -20,7 +20,7 @@ const LabFacilities = () => {
           <h1 className="text-4xl font-extrabold text-center text-[#2a526c] mb-10 drop-shadow-lg">
             Lab Facilities 
           </h1>
-          <p className="mt-5 max-w-xl mx-auto text-xl font-semibold text-gray-700">
+          <p className="mt-5 max-w-xl mx-auto text-lg text-gray-700">
             Explore our state-of-the-art research laboratories and equipment at the Department of Ocean Engineering & Naval Architecture
           </p>
         </div>
@@ -42,7 +42,7 @@ const LabFacilities = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="font-medium text-gray-700">{video.title}</h3>
+                <h3 className="font-bold text-gray-700">{video.title}</h3>
                 <div className="mt-4 flex justify-end">
                   <a
                     href={`https://youtube.com/watch?v=${video.id}`}

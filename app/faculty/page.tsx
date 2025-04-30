@@ -1,6 +1,5 @@
-// app/faculty/page.tsx
-
 import React, { FC } from "react";
+import { Link as LinkIcon } from 'lucide-react';
 
 interface Faculty {
     name: string;
@@ -448,68 +447,85 @@ const facultyData: Faculty[] = [
     }
 ];
 
+
 const FacultyCard: FC<{ faculty: Faculty }> = ({ faculty }) => (
-    <div className="max-w-sm w-full mx-auto my-6 p-6 border border-gray-200 rounded-lg shadow-lg bg-white hover:shadow-2xl transition-shadow duration-500 transform hover:-translate-y-2 hover:scale-105">
-        <img
-            src={faculty.profilePicture || "/placeholder.png"}
-            alt={`${faculty.name}'s profile`}
-            className="rounded-full mx-auto mb-4 w-32 h-32 object-cover border-4 border-blue-600 shadow-lg hover:opacity-90 transition-opacity duration-300"
-        />
-        <h2 className="text-xl font-bold text-gray-800 text-center hover:text-blue-700 transition-colors duration-300">
-            {faculty.name}
-        </h2>
-        <h3 className="text-gray-600 italic text-center">{faculty.designation}</h3>
-        <p className="text-sm text-gray-500 text-center mt-2">
-            <a
-                href={`mailto:${faculty.email}`}
-                className="underline hover:text-blue-500 transition-colors duration-300"
-            >
-                {faculty.email}
-            </a>
-        </p>
-        <h4 className="text-lg font-semibold mt-4 text-gray-700">Research Areas:</h4>
-        <ul className="list-disc list-inside text-gray-700 space-y-1">
-            {faculty.researchAreas.map((area, idx) => (
-                <li key={idx}>{area}</li>
-            ))}
-        </ul>
-        <h4 className="text-lg font-semibold mt-4 text-gray-700">Courses:</h4>
-        <ul className="list-disc list-inside text-gray-700 space-y-1">
-            {faculty.courses.map((course, idx) => (
-                <li key={idx}>{course}</li>
-            ))}
-        </ul>
-        <div className="mt-4">
-            <h4 className="text-lg font-semibold text-gray-700">Social Links:</h4>
-            <div className="flex space-x-4 mt-2">
-                {faculty.socialMedia.map((social, idx) => {
-                    const [platform, link] = Object.entries(social)[0];
-                    return (
-                        <a
+    <div className="max-w-md w-full mx-auto my-6 p-10 border border-gray-200 rounded-lg shadow-lg bg-white hover:shadow-2xl transition-shadow duration-500 transform hover:-translate-y-2 hover:scale-105">
+        <div className="overflow-x-auto">
+            <div className="min-w-[100%]">
+                <img
+                    src={faculty.profilePicture || "/placeholder.png"}
+                    alt={`${faculty.name}'s profile`}
+                    className="rounded-full mx-auto mb-4 w-32 h-32 object-cover border-4 border-blue-600 shadow-lg hover:opacity-90 transition-opacity duration-300"
+                />
+                <h2 className="text-xl font-bold text-gray-800 text-center hover:text-blue-700 transition-colors duration-300">
+                    {faculty.name}
+                </h2>
+                <h3 className="text-gray-600 italic text-center">{faculty.designation}</h3>
+                <p className="text-sm text-gray-500 text-center mt-2">
+                    <a
+                        href={`mailto:${faculty.email}`}
+                        className="underline hover:text-blue-500 transition-colors duration-300"
+                    >
+                        {faculty.email}
+                    </a>
+                </p>
+
+                <h4 className="text-lg font-semibold mt-4 text-gray-700">Research Areas:</h4>
+                <ul className="list-disc list-inside text-gray-700 space-y-1">
+                    {faculty.researchAreas.map((area, idx) => (
+                        <li key={idx}>{area}</li>
+                    ))}
+                </ul>
+
+                <h4 className="text-lg font-semibold mt-4 text-gray-700">Courses:</h4>
+                <ul className="list-disc list-inside text-gray-700 space-y-1">
+                    {faculty.courses.map((course, idx) => (
+                        <li
                             key={idx}
-                            href={link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:underline hover:text-blue-800 transition-colors duration-300"
+                            className="truncate"
+                            title={course} 
                         >
-                            {platform}
-                        </a>
-                    );
-                })}
+                            {course}
+                        </li>
+                    ))}
+                </ul>
+
+                <div className="mt-4">
+                    <h4 className="text-lg font-semibold text-gray-700">Social Links:</h4>
+                    <div className="flex space-x-4 mt-2">
+                        {faculty.socialMedia.map((social, idx) => {
+                            const [platform, link] = Object.entries(social)[0];
+                            return (
+                                <a
+                                    key={idx}
+                                    href={link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center space-x-1 text-blue-600 hover:underline hover:text-blue-800 transition-colors duration-300"
+                                >
+                                    <LinkIcon size={18} />
+                                    <span>{platform}</span>
+                                </a>
+                            );
+                        })}
+                    </div>
+                </div>
+
+                <div className="mt-4">
+                    <a
+                        href={faculty.officialInstituteWebsite}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-center text-blue-600 hover:underline hover:text-blue-800 transition-colors duration-300"
+                    >
+                        Official Website
+                    </a>
+                </div>
             </div>
-        </div>
-        <div className="mt-4">
-            <a
-                href={faculty.officialInstituteWebsite}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center text-blue-600 hover:underline hover:text-blue-800 transition-colors duration-300"
-            >
-                Official Website
-            </a>
         </div>
     </div>
 );
+
 
 const FacultyPage: FC = () => (
     //<div className="min-h-screen bg-gradient-to-br from-green-100 via-blue-50 to-blue-200 py-12">
