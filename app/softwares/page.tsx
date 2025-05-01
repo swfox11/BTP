@@ -43,7 +43,7 @@ export default function SoftwareResources() {
         
         {/* Description */}
         <p className="text-lg text-gray-700 text-center mb-12 max-w-3xl mx-auto">
-          Access essential engineering software for your coursework and research. Below you'll find download links and resources for each application.
+          Access essential engineering software for your coursework and research. Below you will find download links and resources for each application.
         </p>
 
         {/* Software Cards */}
@@ -93,19 +93,6 @@ export default function SoftwareResources() {
           ))}
         </div>
 
-        {/* Additional Help Section */}
-        <div className="mt-16 bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
-          <h2 className="text-2xl font-semibold text-[#2a526c] mb-4">
-            Need Help with Software?
-          </h2>
-          <p className="text-gray-700 mb-4">
-            For installation support or technical issues with any of these software packages, please contact:
-          </p>
-          <div className="text-blue-600">
-            <p>IT Support: <a href="mailto:itsupport@yourinstitute.edu" className="hover:underline">itsupport@yourinstitute.edu</a></p>
-            <p>Department Lab: <a href="mailto:oena-lab@yourinstitute.edu" className="hover:underline">oena-lab@yourinstitute.edu</a></p>
-          </div>
-        </div>
       </div>
     </div>
   );
