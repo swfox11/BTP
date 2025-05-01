@@ -307,7 +307,7 @@ const EventsPage = () => {
           technology, and marine engineering.
         </p>
         <p className="text-gray-700 leading-8 text-lg mt-4">
-          Hosted multiple times by IIT Kharagpur's Department of Ocean Engineering and Naval
+          Hosted multiple times by IIT Kharagpur&apos;s Department of Ocean Engineering and Naval
           Architecture, ICSOT fosters collaboration between academia and industry. The department
           hosted its first ICSOT in 2009, with the latest edition in 2023 showcasing cutting-edge
           innovations in the field.
