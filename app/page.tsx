@@ -9,7 +9,7 @@ import {
   CalendarDays,
   Image as ImageIcon,
   GraduationCap,
-  MapPin
+  Laptop2
 } from "lucide-react";
 
 import Link from 'next/link';
@@ -226,13 +226,13 @@ export default function Home() {
             </Link>
 
             {/* Feature 9 */}
-            <Link href="/location">
+            <Link href="/engineering-software">
               <div className="p-6 bg-gradient-to-r from-teal-400 to-teal-600 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 h-full">
                 <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center gap-2 text-center">
-                  <MapPin size={28} /> Location
+                  <Laptop2 size={28} /> Engineering Software
                 </h3>
                 <p className="leading-relaxed">
-                  The Department of Ocean Engineering and Naval Architecture at IIT Kharagpur is located in the serene and historic campus of IIT Kharagpur.
+                  Explore specialized tools and engineering software used in naval architecture and ocean engineering for design, simulation, and analysis.
                 </p>
               </div>
             </Link>

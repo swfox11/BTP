@@ -14,10 +14,10 @@ const softwares = [
     description: "AutoCAD is a commercial computer-aided design (CAD) and drafting software application. It's widely used by naval architects for 2D and 3D design and drafting.",
     downloadLink: "https://www.autodesk.com/education/edu-software/overview",
     documentationLink: "https://www.autodesk.com/support",
-    logo: "/softwares/autocad.jpg" // Replace with your actual logo path
+    logo: "/softwares/autocad.png" // Replace with your actual logo path
   },
   {
-    name: "Maxsurf Modeler",
+    name: "Maxsurf",
     description: "Maxsurf is an integrated suite of naval architecture software for vessel design and analysis. It includes tools for hull modeling, stability analysis, and structural design.",
     downloadLink: "https://www.bentley.com/software/maxsurf/",
     documentationLink: "https://docs.bentley.com/",
