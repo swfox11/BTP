@@ -43,7 +43,6 @@
 
 // export default NumericalsPage;
 
-
 import Link from 'next/link';
 
 const numericals = [
@@ -57,14 +56,14 @@ const numericals = [
   { title: 'Longitudinal Metacentric Radius (BML) for Rectangular Barge', path: '/numericals/longitudinal_meta' },
   { title: 'Initial Stability Calculation (GM) for Rectangular Barge', path: '/numericals/stability' },
   { title: 'Encounter Frequency (ωₑ) in Sea Keeping', path: '/numericals/encounterfrequency' },
-  { title: 'Reynolds Number for ships (Rn) ', path: '/numericals/reynolds' },
-  { title: 'Froude Number for ships (Fn) ', path: '/numericals/froude' },
-  { title: 'Dispersion relation calculations ', path: '/numericals/dispersion' },
-  { title: 'Period of circulation a floating buoy under coriolis force ', path: '/numericals/coriolis' },
-  { title: 'Energy required (per unit area) to mix a two layered fluid system', path: '/numericals/mixingenergy' },
-  { title: 'Tidal mixing Intensity in an estuary', path: '/numericals/tidalmixingintensity' },
-  { title: 'Wind mixing Intensity in an estuary', path: '/numericals/windmixingintensity' },
-  { title: 'Stratification parameter of an estuary', path: '/numericals/stratificationparameter' },
+  { title: 'Reynolds Number for Ships (Rn) ', path: '/numericals/reynolds' },
+  { title: 'Froude Number for Ships (Fn) ', path: '/numericals/froude' },
+  { title: 'Dispersion Relation Calculations ', path: '/numericals/dispersion' },
+  { title: 'Circulation Period under Coriolis Force ', path: '/numericals/coriolis' },
+  { title: 'Mixing Energy for two layered Fluid System', path: '/numericals/mixingenergy' },
+  { title: 'Tidal Mixing Intensity in an Estuary', path: '/numericals/tidalmixingintensity' },
+  { title: 'Wind Mixing Intensity in an Estuary', path: '/numericals/windmixingintensity' },
+  { title: 'Stratification Parameter of an Estuary', path: '/numericals/stratificationparameter' },
 ];
 
 const NumericalsPage = () => {
@@ -73,11 +72,11 @@ const NumericalsPage = () => {
       <h1 className="text-4xl font-extrabold text-center text-[#2a526c] drop-shadow-lg mb-12">
         Numerical Calculation Tools
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {numericals.map((numerical, index) => (
           <Link href={numerical.path} key={index}>
-            <div className="cursor-pointer bg-[#48bf91] hover:bg-[#3ca97d] text-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
-              <h3 className="text-lg font-semibold text-center">{numerical.title}</h3>
+            <div className="cursor-pointer bg-[#f4f4f4] p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 border-l-4 border-[#48bf91]">
+              <h3 className="text-xl font-semibold text-[#48bf91]">{numerical.title}</h3>
             </div>
           </Link>
         ))}

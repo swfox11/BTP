@@ -7,7 +7,7 @@ const PublicationsPage = () => {
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-center text-[#2a526c] drop-shadow-lg mb-4">Publications</h1>
-          <p className="text-xl text-gray-700">
+          <p className="text-lg text-gray-700">
             Explore our department&apos;s research contributions
           </p>
         </div>
