@@ -4,14 +4,14 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const images: string[] = [
-  "/sm24/sm1.jpg",
+  "/sm24/sm1.JPG",
   "/sm24/sm2.jpeg",
-  "/sm24/sm3.jpg",
-  "/sm24/sm4.jpg",
+  "/sm24/sm3.JPG",
+  "/sm24/sm4.JPG",
   "/sm24/sm5.jpeg",
-  "/sm24/sm6.jpg",
-  "/sm24/sm7.jpg",
-  "/sm24/sm8.jpg",
+  "/sm24/sm6.JPG",
+  "/sm24/sm7.JPG",
+  "/sm24/sm8.JPG",
   "/sm24/sm9.jpeg",
 ];
 
@@ -37,7 +37,7 @@ const SM24: React.FC = () => {
           >
             <img 
               src={image} 
-              alt={`Classroom interior view ${index + 1}`} 
+              alt={`samudramanthan 2024 ${index + 1}`} 
               className="w-full h-64 object-cover rounded-lg"
               loading="lazy"
             />
@@ -56,7 +56,7 @@ const SM24: React.FC = () => {
         >
           <motion.img 
             src={selectedImage} 
-            alt="Zoomed Classroom"
+            alt="Zoomed sm24"
             className="max-w-4xl max-h-[90vh] object-contain rounded-lg shadow-lg"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}

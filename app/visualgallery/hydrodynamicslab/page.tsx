@@ -103,7 +103,7 @@ const HydrodynamicsLab: React.FC = () => {
           >
             <img 
               src={image} 
-              alt={`Classroom interior view ${index + 1}`} 
+              alt={`Hydrodynamicslab view ${index + 1}`} 
               className="w-full h-64 object-cover rounded-lg"
               loading="lazy"
             />
@@ -122,7 +122,7 @@ const HydrodynamicsLab: React.FC = () => {
         >
           <motion.img 
             src={selectedImage} 
-            alt="Zoomed Classroom"
+            alt="Zoomed lab"
             className="max-w-4xl max-h-[90vh] object-contain rounded-lg shadow-lg"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}

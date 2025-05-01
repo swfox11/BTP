@@ -139,7 +139,7 @@ const Classrooms: React.FC = () => {
           >
             <img 
               src={image} 
-              alt={`Classroom interior view ${index + 1}`} 
+              alt={`Classroom view ${index + 1}`} 
               className="w-full h-64 object-cover rounded-lg"
               loading="lazy"
             />

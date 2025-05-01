@@ -91,7 +91,7 @@ const DepartmentExterior: React.FC = () => {
           >
             <img 
               src={image} 
-              alt={`Classroom interior view ${index + 1}`} 
+              alt={`Department exterior view ${index + 1}`} 
               className="w-full h-64 object-cover rounded-lg"
               loading="lazy"
             />
@@ -110,7 +110,7 @@ const DepartmentExterior: React.FC = () => {
         >
           <motion.img 
             src={selectedImage} 
-            alt="Zoomed Classroom"
+            alt="Zoomed exterior"
             className="max-w-4xl max-h-[90vh] object-contain rounded-lg shadow-lg"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
