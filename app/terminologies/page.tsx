@@ -75,22 +75,22 @@ const terminologies = [
   { 
     term: "Block Coefficient", 
     definition: "A dimensionless number representing the ratio of a ship's underwater volume to the volume of a rectangular block enclosing the submerged hull.", 
-    link: "https://www.nautilusshipping.com/form-coefficient-of-ship" 
+    link: "https://www.slideshare.net/slideshow/ship-form-coefficients/44027721" 
   },
   { 
     term: "Midship Coefficient", 
     definition: "The ratio of the underwater cross-sectional area of the midship section to the area of a rectangle of the same width and depth.", 
-    link: "https://www.nautilusshipping.com/form-coefficient-of-ship" 
+    link: "https://www.slideshare.net/slideshow/ship-form-coefficients/44027721" 
   },
   { 
     term: "Prismatic Coefficient", 
     definition: "A measure of hull fineness calculated as the ratio of immersed volume to the volume of a prism with length equal to LWL.", 
-    link: "https://www.nautilusshipping.com/form-coefficient-of-ship" 
+    link: "https://www.slideshare.net/slideshow/ship-form-coefficients/44027721" 
   },
   { 
     term: "Waterplane Area Coefficient", 
     definition: "The ratio of the actual waterplane area to the area of a rectangle of the same length and maximum beam at the waterline.", 
-    link: "https://www.nautilusshipping.com/form-coefficient-of-ship" 
+    link: "https://www.slideshare.net/slideshow/ship-form-coefficients/44027721" 
   },
   { 
     term: "Admiralty Coefficient", 

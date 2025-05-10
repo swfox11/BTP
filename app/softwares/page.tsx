@@ -7,28 +7,28 @@ const softwares = [
     description: "ANSYS is a general-purpose finite element analysis (FEA) software package used in engineering simulation. It provides simulation capabilities for structural, thermal, fluid, and electromagnetic analyses.",
     downloadLink: "https://www.ansys.com/academic/students",
     documentationLink: "https://www.ansys.com/resource-center",
-    logo: "/softwares/ansys.png" // Replace with your actual logo path
+    logo: "/softwares/ansys.png" 
   },
   {
     name: "AutoCAD",
     description: "AutoCAD is a commercial computer-aided design (CAD) and drafting software application. It's widely used by naval architects for 2D and 3D design and drafting.",
     downloadLink: "https://www.autodesk.com/education/edu-software/overview",
     documentationLink: "https://www.autodesk.com/support",
-    logo: "/softwares/autocad.png" // Replace with your actual logo path
+    logo: "/softwares/autocad.png" 
   },
   {
     name: "Maxsurf",
     description: "Maxsurf is an integrated suite of naval architecture software for vessel design and analysis. It includes tools for hull modeling, stability analysis, and structural design.",
     downloadLink: "https://www.bentley.com/software/maxsurf/",
     documentationLink: "https://docs.bentley.com/",
-    logo: "/softwares/maxsurf.jpg" // Replace with your actual logo path
+    logo: "/softwares/maxsurf.jpg" 
   },
   {
     name: "MATLAB",
     description: "MATLAB is a programming platform for numerical computing and algorithm development, widely used in marine engineering for data analysis, modeling, and simulation.",
-    downloadLink: "https://www.mathworks.com/academia/student.html",
+    downloadLink: "https://in.mathworks.com/products/matlab/student.html",
     documentationLink: "https://www.mathworks.com/help/matlab/",
-    logo: "/softwares/matlab.png" // Replace with your actual logo path
+    logo: "/softwares/matlab.png" 
   }
 ];
 
@@ -78,7 +78,7 @@ export default function SoftwareResources() {
                   rel="noopener noreferrer"
                   className="bg-[#48bf91] hover:bg-[#3ca97d] text-white px-4 py-2 rounded-md font-medium transition-colors"
                 >
-                  Download
+                  Official Download Link
                 </Link>
                 <Link
                   href={software.documentationLink}

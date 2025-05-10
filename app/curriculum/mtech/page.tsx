@@ -90,7 +90,7 @@ const electives = {
 const MTechCurriculum = () => {
   return (
     <div className="min-h-screen bg-gray-800 text-white py-10 px-6">
-      <h1 className="text-4xl font-bold drop-shadow-lg text-center mb-8">M.Tech Curriculum</h1>
+      <h1 className="text-4xl font-bold drop-shadow-lg text-center mb-8">M.Tech. Curriculum</h1>
       
       {/* Combined Semester 1 and 2 */}
       <div className="mb-12">

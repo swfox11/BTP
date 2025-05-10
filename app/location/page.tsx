@@ -8,7 +8,7 @@ const LocationPage = () => {
         Visit Us
       </h1>
       <p className="text-lg text-gray-700 mb-6 text-center max-w-3xl">
-        The Department of Ocean Engineering and Naval Architecture at IIT Kharagpur is located in the serene and historic campus of IIT Kharagpur. Below is our exact location on Google Maps for your convenience.
+        The Department of Ocean Engineering and Naval Architecture is located in the serene and historic campus of IIT Kharagpur. Below is our exact location on Google Maps for your convenience.
       </p>
       <div className="w-full max-w-4xl rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
         <iframe

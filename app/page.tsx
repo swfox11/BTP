@@ -60,7 +60,7 @@ export default function Home() {
         <p className="text-0.5xl md:text-xl max-w-2xl leading-relaxed mb-10">
           A comprehensive platform built by students of the Department of Ocean
           Engineering & Naval Architecture at IIT Kharagpur to assist with
-          academic tools, global insights, and much more.
+          academic tools, global insights, and much more
         </p>
 
         <div className="flex flex-col items-center gap-4 mt-4 md:flex-row md:gap-5">

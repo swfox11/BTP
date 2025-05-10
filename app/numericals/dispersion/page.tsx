@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 
-
 const WaveDispersionPage = () => {
   const [wavelength, setWavelength] = useState<string>('');
   const [depth, setDepth] = useState<string>('');

@@ -21,7 +21,7 @@ const LabFacilities = () => {
             Lab Facilities 
           </h1>
           <p className="mt-5 max-w-xl mx-auto text-lg text-gray-700">
-            Explore our state-of-the-art research laboratories and equipment at the Department of Ocean Engineering & Naval Architecture
+            Discover our state-of-the-art research laboratories, advanced equipment, and innovative facilities at the department
           </p>
         </div>
 
